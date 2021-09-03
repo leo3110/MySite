@@ -1,6 +1,11 @@
 <?php
 session_start();
-$_SESSION['op'] = 'start';
-include 'header.php';
-echo "agora vai";
-include 'footer.php';
+if (!isset($_SESSION['op'])) {
+  $_SESSION['op'] = 'start';
+}
+include 'GUI/header.html';
+include 'GUI/leftMenu.html';
+// if ($_SESSION['op'] == 'start') {
+// }
+
+include 'GUI/footer.html';
