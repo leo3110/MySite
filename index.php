@@ -5,7 +5,8 @@ if (!isset($_SESSION['op'])) {
 }
 include 'GUI/header.html';
 include 'GUI/leftMenu.html';
-// if ($_SESSION['op'] == 'start') {
-// }
+if ($_SESSION['op'] == 'start') {
+  include 'GUI/home.html';
+}
 
 include 'GUI/footer.html';
