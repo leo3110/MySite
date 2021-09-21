@@ -1,5 +1,5 @@
 <?php
- define('tela', ['home','ficha','tk']);
+ define('tela', ['login','home','ficha','tk']);
 	function checkEqual($a,$b){
 		if (isset($a)&&$a==$b) {
 			return true;

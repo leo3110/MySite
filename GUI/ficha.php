@@ -1,4 +1,3 @@
-<body style="color:#ffffff;background-color:#000000" class="text-light content-center text-center">
   <div class="p-5"> </div>
   <div id="quadro" class="border border-primary mx-auto rounded w-50" style="background-color:#0f0f0f">
     <h1>Identificação, por favor:</h1>
