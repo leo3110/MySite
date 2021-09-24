@@ -31,7 +31,7 @@ class User {
   			throw new PDOException("Error Processing Request", 1);
   			return $erro=1;
   		} else {
-        echo "VAI";
+        $_SESSION['logado']=$r[0];
       }
   	} catch (PDOException $e) {
   		echo "Deu um erro aí, Vê com o Leo:" . $e->getMessage();

@@ -1,8 +1,8 @@
 <?php
 session_start();
-include_once 'script/function.php';
-include_once 'GUI/header.html';
-include_once 'GUI/leftMenu.html';
+include 'script/function.php';
+include 'GUI/header.html';
+include 'GUI/leftMenu.html';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   include_once 'Object/user.php';
@@ -13,9 +13,9 @@ elseif (!isset($_SESSION['op'])||!isset($_GET['tela'])) {
   $_SESSION['op'] = 'home';
   $_GET['tela'] = 'home';
 }
-elseif (checkTela($_GET['tela'])) {
+if (checkTela($_GET['tela'])) {
   $_SESSION['op']=$_GET['tela'];
-  include_once 'GUI/'.$_GET["tela"].'.php';
+  include 'GUI/'.$_GET["tela"].'.php';
 }
 else {
   echo "ERRO";
