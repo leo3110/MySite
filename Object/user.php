@@ -27,14 +27,18 @@ class User {
   		$stmt = $conn->prepare("Select nome,senha from user1 where nome = '". $login ."'");
   		$stmt->execute();
   		$r = $stmt->fetch(PDO::FETCH_NUM);
-  		if ($r[1]!=$senha) {
+  		if ($r[1]!=md5("P455".$senha."W0RD")) {
+        echo md5("P455".$senha."W0RD");
+        echo "<br>";
+        echo $r[1];
   			throw new PDOException("Error Processing Request", 1);
   			return $erro=1;
   		} else {
         $_SESSION['logado']=$r[0];
+        echo "WTF FUNCIONOU";
       }
   	} catch (PDOException $e) {
-  		echo "Deu um erro aí, Vê com o Leo:" . $e->getMessage();
+  		echo "   Deu um erro aí, Vê com o Leo:" . $e->getMessage();
   	} finally {
   		$conn = null;
   	}

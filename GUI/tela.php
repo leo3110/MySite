@@ -1,8 +1,3 @@
-<?php
-  require "db/banco.php";
-  require "classe/personagem.php";
-  require "classe/usuario.php";
-?>
   <body style="font-family:BinkMacSystemFont;color:#ffffff;background-color:#000000;font-size:21px" class="content-center">
     <div class="row p-1 m-1 rounded border border-primary" style="background-color:#303030">
       <div class="col-3 rounded mr-1 border border-info" style="background-color:#060606">
