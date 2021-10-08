@@ -35,7 +35,6 @@ class User {
   			return $erro=1;
   		} else {
         $_SESSION['logado']=$r[0];
-        echo "WTF FUNCIONOU";
       }
   	} catch (PDOException $e) {
   		echo "   Deu um erro aí, Vê com o Leo:" . $e->getMessage();

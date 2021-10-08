@@ -1,0 +1,12 @@
+html, body, .full-height{
+  height: 100%;
+}
+div.outline{
+	font-family: sans-serif;
+}
+span{
+	font-size: 1px;
+}
+#Me{
+  font-family: serif;
+}

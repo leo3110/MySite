@@ -2,7 +2,7 @@
 session_start();
 include 'script/function.php';
 include 'GUI/header.html';
-include 'GUI/leftMenu.html';
+include 'GUI/leftMenu.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   include_once 'Object/user.php';
@@ -11,11 +11,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 elseif (!isset($_SESSION['op'])||!isset($_GET['tela'])) {
   $_SESSION['op'] = 'home';
-  $_GET['tela'] = 'home';
+  include "GUI/home.php";
 }
-if (checkTela($_GET['tela'])) {
+elseif (checkTela($_GET['tela'])) {
   $_SESSION['op']=$_GET['tela'];
-  include 'GUI/'.$_GET["tela"].'.php';
+  include 'GUI/'.$_SESSION['op'].'.php';
 }
 else {
   echo "ERRO";
