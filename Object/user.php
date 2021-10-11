@@ -28,13 +28,10 @@ class User {
   		$stmt->execute();
   		$r = $stmt->fetch(PDO::FETCH_NUM);
   		if ($r[1]!=md5("P455".$senha."W0RD")) {
-        echo md5("P455".$senha."W0RD");
-        echo "<br>";
-        echo $r[1];
   			throw new PDOException("Error Processing Request", 1);
   			return $erro=1;
   		} else {
-        $_SESSION['logado']=$r[0];
+        return $_SESSION['logado']=$r[0];
       }
   	} catch (PDOException $e) {
   		echo "   Deu um erro aí, Vê com o Leo:" . $e->getMessage();
