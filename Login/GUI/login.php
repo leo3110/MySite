@@ -1,4 +1,4 @@
-<div id="quadro" class="border border-primary my-5 mx-auto rounded w-50 text-center">
+<div id="quadro" class="border border-danger my-5 mx-auto rounded w-50 text-center">
   <h1>Identificação, por favor:</h1>
   <form class="" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
     <label for="login_usuario" class="">Nome de usuário:</label>

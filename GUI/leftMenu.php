@@ -7,7 +7,7 @@
       <a href="/TK"><div class="my-4 text-dark outline">TK</div></a>
       ';
     } else {
-      echo '<a href="?tela=login"><div class="my-4 text-dark outline">Login</div></a>';
+      echo '<a href="/Login"><div class="my-4 text-dark outline">Login</div></a>';
     }?>
   </h5>
 </div>

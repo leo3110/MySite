@@ -1,7 +1,7 @@
 <?php
 session_start();
 include 'script/function.php';
-include 'GUI/header.html';
+include 'GUI/header.php';
 include 'GUI/leftMenu.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -21,7 +21,7 @@ else {
   echo "ERRO";
 }
 
-include_once 'GUI/footer.html';
+include_once 'GUI/footer.php';
 // [
 // {"type":"header","version":"5.0.2","comment":"Export to JSON plugin for PHPMyAdmin"},
 // {"type":"database","name":"mydata"},
