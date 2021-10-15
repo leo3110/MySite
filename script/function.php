@@ -19,3 +19,6 @@
       }
     }
   }
+  function clean(){
+    unset($_SESSION);
+  }
