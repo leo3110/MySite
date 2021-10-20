@@ -3,15 +3,15 @@ class User {
   private $idUsuario;
   private $senhaUsuario;
 
-  function getId(){
-    return $this->idUsuario;
-  }
+  // function getId(){
+  //   return $this->idUsuario;
+  // }
   function setId($idUsuario){
     $this->idUsuario = $idUsuario;
   }
-  function getSenha(){
-    return $this->idUsuario;
-  }
+  // function getSenha(){
+  //   return $this->idUsuario;
+  // }
   function setSenha($senhaUsuario){
     $this->senhaUsuario = $senhaUsuario;
   }
@@ -29,9 +29,11 @@ class User {
   		$r = $stmt->fetch(PDO::FETCH_NUM);
   		if ($r[1]!=md5("P455".$senha."W0RD")) {
   			throw new PDOException("Error Processing Request", 1);
-  			return $erro=1;
-  		} else {
-        return $_SESSION['logado']=$r[0];
+        return $erro = 1;
+      } else {
+        $this->setId($login);
+        $this->setSenha($senha);
+        $_SESSION['logado'] = $_POST['login_usuario'];
       }
   	} catch (PDOException $e) {
   		echo "   Deu um erro aí, Vê com o Leo:" . $e->getMessage();

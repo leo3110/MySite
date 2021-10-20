@@ -1,6 +1,6 @@
 <div id="quadro" class="border border-danger my-5 mx-auto rounded w-50 text-center">
   <h1>Identificação, por favor:</h1>
-  <form class="" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+  <form class="" action="../index.php" method="post">
     <label for="login_usuario" class="">Nome de usuário:</label>
     <input class="text-light form-control w-50 mx-auto bg-secondary" type="text" name="login_usuario" id="login_usuario" value="" required>
     <label for="senha_usuario" class="">Senha:</label>

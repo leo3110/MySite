@@ -1,7 +1,11 @@
-<?php
-include_once '../GUI/header.php';
-include_once '../GUI/leftMenu.php';
-
-include 'GUI/tk.php';
-
-include_once 'GUI/footer.php';
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <?php echo "OOPS!"; ?>
+    <a href="../"><span>Voltar a segurança</span></a>
+  </body>
+</html>
