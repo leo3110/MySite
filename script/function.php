@@ -16,6 +16,9 @@
         if ($key == $a) {
           return $a;
         }
+        else {
+          return "home";
+        }
       }
     }
   }

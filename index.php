@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once 'script/start.php';
 include 'script/function.php';
 include 'GUI/header.php';
 
@@ -11,20 +10,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   include 'GUI/leftMenu.php';
   include 'GUI/home.php';
 }
+if (checkSet($_GET['tela'])) {
+  $_SESSION['op']=$_GET['tela'];
+  include 'GUI/leftMenu.php';
+  include 'GUI/'.$_GET['tela'].'.php';
+}
 elseif ($_SESSION['op'] == 'start') {
   include 'GUI/leftMenu.php';
   include "GUI/home.php";
   $_SESSION['op']='home';
 }
-elseif (checkTela($_GET['tela'])) {
-  $_SESSION['op']=$_GET['tela'];
-  include 'GUI/leftMenu.php';
-  include 'GUI/'.$_GET["tela"].'.php';
-  echo "wtf";
+else {
+  echo "ERRO";
 }
-
-else echo "ERRO";
-if (isset($_GET['tela'])&&$_GET['tela']=='clean') {
+if (isset($_GET['op'])&&$_GET['op']=='clean') {
   clean();
 }
 include_once 'GUI/footer.php';
