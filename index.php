@@ -10,7 +10,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   include 'GUI/leftMenu.php';
   include 'GUI/home.php';
 }
-if (checkSet($_GET['tela'])) {
+if (isset($_GET['op'])&&($_GET['op']=='clean'||$_GET['op']=='logout')) {
+  clean();
+  include 'GUI/leftMenu.php';
+  include 'GUI/home.php';
+}
+elseif (isset($_GET['tela'])&&checkTela($_GET['tela'])) {
   $_SESSION['op']=$_GET['tela'];
   include 'GUI/leftMenu.php';
   include 'GUI/'.$_GET['tela'].'.php';
@@ -19,12 +24,6 @@ elseif ($_SESSION['op'] == 'start') {
   include 'GUI/leftMenu.php';
   include "GUI/home.php";
   $_SESSION['op']='home';
-}
-else {
-  echo "ERRO";
-}
-if (isset($_GET['op'])&&$_GET['op']=='clean') {
-  clean();
 }
 include_once 'GUI/footer.php';
 // [
