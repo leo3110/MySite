@@ -1,7 +1,7 @@
 <div style="background-image: url('img/wpp.jpg');background-size: cover; height:100%" class="col text-center content-center">
   <div class="row">
     <div class="col">
-      <h1 class="m-4 outline">Jaeyun</h1>
+      <h1 class="m-4 outline">Leo</h1>
       <img src="img\jaeyun.png" width="50%" height="inherit">
       <h1 class="m-4">Matou o karu <i id="tk_leo">PlaceHolder</i> vezes</h1>
       <h6>Incrementar</h6>
@@ -10,7 +10,7 @@
       </a>
     </div>
     <div class="col">
-      <h1 class="m-4 outline">Lin Fei</h1>
+      <h1 class="m-4 outline">Karu</h1>
       <img src="img\lin fei.png" width="50%" height="inherit" style="transform: scaleX(-1)">
       <h1 class="m-4">Matou o leo <i id="tk_karu">PlaceHolder</i> vezes</h1>
       <h6>Incrementar</h6>
@@ -19,9 +19,5 @@
       </a>
     </div>
   </div>
-  <p style="color:#0002">Números expostos tendem a mudar <!--e é sempre pra mais, KAKA --></p>
+  <p class="nota">Números expostos tendem a mudar <!--e é sempre pra mais, KAKA --></p>
 </div>
-<script type="text/javascript">
-document.getElementById("tk_karu").innerHTML = document.getElementById("karu_tk").innerHTML;
-document.getElementById("tk_leo").innerHTML = document.getElementById("leo_tk").innerHTML;
-</script>
