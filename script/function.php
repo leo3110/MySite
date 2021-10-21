@@ -11,7 +11,6 @@
     }
   }
   function checkTela($a){
-    if (isset($a)) {
       foreach (tela as $key) {
         if ($key == $a) {
           return $a;
@@ -20,7 +19,6 @@
           return "home";
         }
       }
-    }
   }
   function clean(){
     unset($_SESSION);
