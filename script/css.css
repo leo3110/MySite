@@ -13,3 +13,8 @@ span{
 .nota{
   color: #0002;
 }
+.MyBorder{
+  border-style: solid;
+  border-radius: 16px;
+  border-color: #dc3545;
+}
