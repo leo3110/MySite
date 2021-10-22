@@ -20,7 +20,7 @@ elseif (isset($_GET['tela'])&&checkTela($_GET['tela'])) {
   include 'GUI/leftMenu.php';
   include 'GUI/'.$_GET['tela'].'.php';
 }
-elseif ($_SESSION['op'] == 'start') {
+elseif (!isset($_SESSION['op'])) {
   include 'GUI/leftMenu.php';
   include "GUI/home.php";
   $_SESSION['op']='home';
