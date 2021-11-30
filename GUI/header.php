@@ -12,5 +12,4 @@
     <link rel="shortcut icon" href="img/d20.png">
     <title>Leonardo N Souza</title>
   </head>
-    <body class="bg-dark text-light">
-      <div class="row m-0 full-height">
+    <body class="">

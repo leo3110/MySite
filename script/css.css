@@ -1,20 +1,81 @@
-html, body, .full-height{
+html, body{
+  height: 100%;
+  background-color: #171717;
+  color: #fff !important;
+  margin: 0 auto;
+  -ms-overflow-style: none; \\ hide scrollbar
+  scrollbar-width:none;     \\ hide scrollbar
+}
+body::-webkit-scrollbar{
+  display: none;            \\ hide scrollbar
+}
+.Top{
+  text-align: center;
+  font-size: 10rem;
+  margin: 0px;
+}
+.Footer{
+ margin: 0;
+ padding: 0;
+ text-align: center;
+ background-color: #e03434;
+ color: #000;
+}
+.ContentRed, .ContentGray{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #000;
+}
+.ContentRed{
+  height: auto;
+  width: 95vw;
+  padding: 0.5rem;
+  background-color: #e03434;
+  margin: 1rem auto;
+  border-radius: 6px;
+}
+.ContentGray{
+  height: 10vh;
+  font-size: 1.6vw;
+  background-color: #9f9f9f;
+  margin: 0;
+  padding: 0;
+}
+.Square{
+  font-size: 3rem;
+  text-align: center;
+  background-color: #eee;
+  border-style: solid;
+  border-radius: 20px;
+  width: 10rem !important;
+  aspect-ratio:1 !important;
+  margin: 1.5rem;
+}
+.Text{
+  padding: 1rem;
+  font-size: 1.6vw;
+  width: 99vw;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.InSquare{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   height: 100%;
 }
-div.outline{
-	font-family: sans-serif;
+.LeftMenu{
+  width: 10vw;
+  height: 100%;
+  background-color: #e03434;
 }
-span{
-	font-size: 1px;
-}
-#Me{
-  font-family: serif;
-}
-.nota{
-  color: #0002;
-}
-.MyBorder{
-  border-style: solid;
+/* .PHP{
+  background-color: #556594;
   border-radius: 16px;
-  border-color: #dc3545;
-}
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+} */
