@@ -1,0 +1,25 @@
+<?php
+ define('tela', ['login','home','ficha','tk']);
+	function checkEqual($a,$b){
+		if (isset($a)&&$a==$b) {
+			return true;
+		}
+	}
+  function checkSet($a){
+    if (isset($a)) {
+      return $a;
+    }
+  }
+  function checkTela($a){
+      foreach (tela as $key) {
+        if ($key == $a) {
+          return $a;
+        }
+        else {
+          return "home";
+        }
+      }
+  }
+  function clean(){
+    unset($_SESSION);
+  }
