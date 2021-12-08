@@ -1,4 +1,4 @@
-<div id="Login" class="Login">
+<div id="Login" class="Login Flex">
   <h1>Faça login para continuar</h1>
   <form class="" action="../index.php" method="post">
     <label for="login_usuario" class="">Nome de usuário:</label>

@@ -20,6 +20,7 @@ body::-webkit-scrollbar{
   margin: 0 auto;
   display: flex;
 }
+
 a,a:active,a:hover{
   color: #000;
   text-decoration: none;
@@ -67,7 +68,7 @@ a,a:active,a:hover{
 }
 .ContentGray{
   height: 10vh;
-  font-size: 1.6vw;
+  font-size: 1.6rem;
   background-color: #9f9f9f;
   margin: 0;
   padding: 0;
@@ -103,26 +104,29 @@ a,a:active,a:hover{
   aspect-ratio:1;
   border-radius: 10%;
   border: solid 2px #e03434;
-  font-size: 1.7em;
+  font-size: 1.7rem;
 }
 label, input, button{
   box-sizing: border-box;
   width: 95%;
   height: 5vh;
-  margin: 1em auto;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 input{
   position: relative;
   background: var(--corFundo);
-  border: solid var(--corVermelho);
+  border: solid 3px 1em var(--corVermelho);
 }
-input::after{
+label::before{
   content: '';
   position: absolute;
-  bottom: 30%;
-  width: 90%;
+  align-content:  center;
+  width: 80%;
   height: 3px;
-  background: var(--corVermelho);
+  border-bottom: solid 2px;
 }
 /* .PHP{
   background-color: #556594;
