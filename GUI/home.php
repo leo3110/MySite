@@ -1,3 +1,17 @@
 <div class="Home">
-  asdsad
+  <div class="Grid">
+
+    <div class="quadradao">
+
+    </div>
+    <div class="quadradao">
+
+    </div>
+    <div class="quadradao">
+
+    </div>
+    <div class="quadradao">
+
+    </div>
+  </div>
 </div>

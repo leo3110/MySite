@@ -106,6 +106,21 @@ a,a:active,a:hover{
   border: solid 2px #e03434;
   font-size: 1.7rem;
 }
+.Grid{
+  
+  display: grid;
+  grid: 25em 25em / 25em 25em;
+}
+.Home{
+  width: 50%;
+  margin: auto;
+}
+.quadradao{
+  margin: auto;
+  width: 20em;
+  aspect-ratio:1;
+  border: solid 6px #fff;
+}
 label, input, button{
   box-sizing: border-box;
   width: 95%;

@@ -11,4 +11,4 @@
     }?>
   </h5>
 </div>
-<div class="Page col">
+<div class="Page">
