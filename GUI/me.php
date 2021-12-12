@@ -1,4 +1,4 @@
-<div class="Main">
+<div class="Me">
   <div class="Top">
     <span>Bem vindo</span>
   </div>
@@ -45,18 +45,15 @@
       Aprendi a forma certa de fazer tudo isso dando de cara contra os erros.
     </div>
   </div>
-  <div class="">
-    <div class="">
+  <div class="ContentRed">
+    <div class="Text">
       Isso é tudo que eu pensei em colocar aqui, por enquanto.
       Não é muito, não mostra quase nada, mas creio que seja uma boa forma de
       mostrar um pouco de tudo. De qualquer forma, aprecie um pouco de pôr do
       sol em CSS abaixo
     </div>
-    <div class="">
-      <div class=""><span>Obrigado</span></div>
+    <div class="Square">
+      <div class="InSquare"><span>Obrigado</span></div>
     </div>
-  </div>
-  <div class="">
-
   </div>
 </div>

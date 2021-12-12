@@ -1,81 +1,194 @@
-html, body{
-  height: 100%;
-  background-color: #171717;
-  color: #fff !important;
-  margin: 0 auto;
-  -ms-overflow-style: none; \\ hide scrollbar
-  scrollbar-width:none;     \\ hide scrollbar
+:root{
+	--corVermelho: #e03434;
+	--corTexto: #e02424;
+	--corPreto: #171717;
+	--corFundo: #521f00;
+}
+html,body{
+	height: 100%;
+	background-color: var(--corPreto);
+	color: var(--corTexto);
+	margin: 0;
+}
+body{
+	-ms-overflow-style: none; \\ scrollbar
+	scrollbar-width:none;     \\ scrollbar
 }
 body::-webkit-scrollbar{
-  display: none;            \\ hide scrollbar
+	display: none;            \\ scrollbar
 }
-.Top{
-  text-align: center;
-  font-size: 10rem;
-  margin: 0px;
+.Body{
+	margin: 0 auto;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+a,a:active,a:hover{
+	color: #000;
+	text-decoration: none;
 }
 .Footer{
- margin: 0;
- padding: 0;
- text-align: center;
- background-color: #e03434;
- color: #000;
-}
-.ContentRed, .ContentGray{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  color: #000;
-}
-.ContentRed{
-  height: auto;
-  width: 95vw;
-  padding: 0.5rem;
-  background-color: #e03434;
-  margin: 1rem auto;
-  border-radius: 6px;
-}
-.ContentGray{
-  height: 10vh;
-  font-size: 1.6vw;
-  background-color: #9f9f9f;
-  margin: 0;
-  padding: 0;
-}
-.Square{
-  font-size: 3rem;
-  text-align: center;
-  background-color: #eee;
-  border-style: solid;
-  border-radius: 20px;
-  width: 10rem !important;
-  aspect-ratio:1 !important;
-  margin: 1.5rem;
-}
-.Text{
-  padding: 1rem;
-  font-size: 1.6vw;
-  width: 99vw;
-  text-align: justify;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.InSquare{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
+	height: 4vh;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #e03434;
+	color: #000;
 }
 .LeftMenu{
-  width: 10vw;
-  height: 100%;
-  background-color: #e03434;
+	min-width: 15vw;
+	height: 100vh;
+	background-color: #e03434;
+	display: flex;
+	text-align: justify;
+	justify-content: center;
+}
+.Page{
+	width: auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.Top{
+	text-align: center;
+	font-size: 10rem;
+	margin: auto;
+	background: var(--corPreto);
+	color: #dfdfdf9d;
+}
+.ContentRed, .ContentGray{
+	text-align: center;
+	align-items: center;
+	color: #000;
+	margin: auto;
+}
+.ContentRed{
+	width: 95%;
+	padding: 0.5rem;
+	background-color: #e03434;
+	margin: 1rem auto;
+	border-radius: 6px;
+	display: flex;
+}
+.ContentGray{
+	min-height: 10vh;
+	font-size: 1.6rem;
+	background-color: #cfcfcf;
+	margin: 0;
+	padding: 0;
+}
+.Square{
+	font-size: 3rem;
+	text-align: center;
+	background-color: #eee;
+	border-style: solid;
+	border-radius: 20px;
+	width: 10rem !important;
+	aspect-ratio:1 !important;
+	margin: 1.5rem;
+}
+.Text{
+	padding: 1rem;
+	font-size: 1.6em;
+	width: auto;
+	display: flex;
+	text-align: justify;
+	justify-content: center;
+	align-items: center;
+}
+.InSquare{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+}
+.Login{
+	width: 80vh;
+	aspect-ratio:1;
+	border-radius: 10%;
+	border: solid 2px #e03434;
+	font-size: 1.7rem;
+}
+.Home{
+	width: 50vw;
+	margin: auto;
+}
+.Grid{
+	display: grid;
+	grid: 25vw 25vw / 25vw 25vw;
+}
+.quadradao{
+	margin: auto;
+	width: 20vw;
+	aspect-ratio:1;
+	border: solid 6px #fff;
+}
+.TK{
+	min-height: 96vh;
+	width: 100%;
+	background-image: url('../img/wpp.jpg');
+	background-size: cover;
+	height:100%;
+	display: flex;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+.Player{
+	width: 50%;
+	margin: 0;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.IMG{
+	width: 100%;
+	margin: auto;
+}
+img{
+	width: 30vw;
+}
+.Button{
+	width: 3rem;
+	aspect-ratio:1;
+	margin: 1em auto;
+	background-color: var(--corVermelho);
+	border: solid 2px var(--corVermelho);
+	border-radius: 16px;
+}
+.nota{
+	display: inline;
+	width: 100%;
+}
+label, input{
+	box-sizing: border-box;
+	width: 95%;
+	height: 5vh;
+	margin: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+input{
+	position: relative;
+	background: var(--corPreto);
+	border: solid 3px 1em var(--corVermelho);
+}
+label::before{
+	content: '';
+	position: absolute;
+	align-content:  center;
+	width: 80%;
+	height: 3px;
+	border-bottom: solid 2px;
 }
 /* .PHP{
-  background-color: #556594;
-  border-radius: 16px;
-  color: black;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+background-color: #556594;
+border-radius: 16px;
+color: black;
+text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 } */
