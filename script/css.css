@@ -157,7 +157,7 @@ img{
 	aspect-ratio:1;
 	margin: 1em auto;
 	background-color: var(--corVermelho);
-	border: solid 2px var(--corVermelho);
+	border: solid 2px var(--corPreto);
 	border-radius: 16px;
 }
 .nota{
