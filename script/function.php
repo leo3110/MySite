@@ -1,23 +1,4 @@
 <?php
-class TableRows extends RecursiveIteratorIterator {
-	function __construct($it) {
-		parent::__construct($it, self::LEAVES_ONLY);
-	}
-
-	function current() {
-		return parent::current();
-	}
-	function beginChildren() {
-    	echo "<script type='text/javascript'>
-		$(document).ready(function(){";
-  	}
-
-  	function endChildren() {
-    	echo "});
-		</script>";
-  	}
-}
-
 define('tela', ['login','home','ficha','tk']);
 function checkEqual($a,$b){
 	if (isset($a)&&$a==$b) {
@@ -34,51 +15,29 @@ function checkTela($a){
 		if ($key == $a) {
 			return $a;
 		}
-		else {
-			return "home";
-		}
+		return "home";
 	}
 }
 function clean(){
 	unset($_SESSION);
 }
 function TKBusca(){
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "tk";
-	try {
-		$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$stmt = $conn->prepare("SELECT leo_tk,karu_tk FROM contagem");
-		$stmt->execute();
-		$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-		foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
-			echo "document.getElementById('$k').innerHTML = '$v';";
-		}
-	} catch(PDOException $e) {
-		echo "Error: " . $e->getMessage();
+	$bancoR = fopen("TK/db/contagem.json","r") or die("erro ao abrir o banco");
+	$json = fread($bancoR,filesize("TK/db/contagem.json"));
+	fclose($bancoR);
+	$json = json_decode($json);
+	foreach ($json as $key => $value) {
+		echo "document.getElementById('$key').innerHTML = '$value';	";
 	}
-	$conn = null;
 }
 function TKManda(){
 	$a = $_GET['vacilo'];
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "tk";
-	try {
-		$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql = "update contagem set $a=$a + 1 where id_tk = 1";
-		$stmt = $conn->prepare($sql);
-		$stmt->execute();
-	}
-	catch(PDOException $e) {
-		echo $sql . "<br>" . $e->getMessage();
-	}
-	finally{
-		$conn = null;
-		TKBusca();
-	}
+	$bancoR = fopen("TK/db/contagem.json","r") or die("erro ao abrir o banco");
+	$json = fread($bancoR,filesize("TK/db/contagem.json"));
+	$objson = json_decode($json);
+	$objson->$a = $objson->$a+1;
+	$json = json_encode($objson);
+	fclose($bancoR);
+	$bancoE = fopen("TK/db/contagem.json","w") or die("erro ao abrir o banco");
+	fwrite($bancoE,$json);
 }

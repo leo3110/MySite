@@ -3,11 +3,16 @@ session_start();
 include 'script/function.php';
 include 'GUI/header.php';
 
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') { //Login
   include 'Object/user.php';
   $u = new User();
   $u->checkUser();
   include 'GUI/home.php';
+}
+if (isset($_GET['tela']) && $_GET['tela'] == "tk" && isset($_GET['vacilo'])) {
+	TKManda();
+	unset($_GET['vacilo']);
 }
 if (isset($_GET['op'])&&($_GET['op']=='clean'||$_GET['op']=='logout')) {
   clean();
@@ -24,7 +29,5 @@ elseif (!isset($_SESSION['op'])) {
 else {
   echo "erro";
 }
-if ($_GET['tela'] = "tk" && isset($_GET['vacilo'])) {
-	TKManda();
-}
+
 include 'GUI/footer.php';

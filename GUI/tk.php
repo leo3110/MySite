@@ -1,4 +1,8 @@
-<?php TKBusca(); ?>
+<script type="text/javascript">
+	$(document).ready(function(){
+		<?php TKBusca(); ?>
+	});
+</script>
 <div class="TK">
 	<div class="Player">
 		<h1 class="Titulo">Leo</h1>
