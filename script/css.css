@@ -153,6 +153,7 @@ img{
 	width: 30vw;
 }
 .Button{
+	position: relative;
 	width: 3rem;
 	aspect-ratio:1;
 	margin: 1em auto;
@@ -160,6 +161,18 @@ img{
 	border: solid 2px var(--corPreto);
 	border-radius: 16px;
 }
+/* .Button[data-tool-tip]:hover::after{
+	content: attr(data-tool-tip);
+	display: block;
+	position: absolute;
+	height: 1rem;
+	aspect-ratio:1;
+	margin: auto;
+	top: 100%;
+	right: 25%;
+	padding: 1em 0;
+	background: #0003;
+} */
 .nota{
 	display: inline;
 	width: 100%;

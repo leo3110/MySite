@@ -2,7 +2,7 @@
   <div class="Grid">
 
     <div class="quadradao">
-      <p>BRAWLHALLA TK</p>
+      <a href="?tela=tk"><p>BRAWLHALLA TK</p></a>
     </div>
     <div class="quadradao">
       <p>Sistema 2</p>

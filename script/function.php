@@ -30,12 +30,11 @@ function TKBusca(){
 		echo "document.getElementById('$key').innerHTML = '$value';	";
 	}
 }
-function TKManda(){
-	$a = $_GET['vacilo'];
+function TKManda($a,$b){
 	$bancoR = fopen("TK/db/contagem.json","r") or die("erro ao abrir o banco");
 	$json = fread($bancoR,filesize("TK/db/contagem.json"));
 	$objson = json_decode($json);
-	$objson->$a = $objson->$a+1;
+	$objson->$a = $objson->$a+$b;
 	$json = json_encode($objson);
 	fclose($bancoR);
 	$bancoE = fopen("TK/db/contagem.json","w") or die("erro ao abrir o banco");
