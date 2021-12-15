@@ -1,14 +1,8 @@
 <div id="LeftMenu" class="LeftMenu">
-  <h1 class="">
-    <?php if (isset($_SESSION['logado'])) {
-      echo '<a href="?op=clean"><div class="">Logout</div></a>
-      <a href="?tela=home"><div class="">Home</div></a>
-      <a href="?tela=ficha"><div class="">Ficha</div></a>
-      <a href="?tela=tk"><div class="">TK</div></a>
-      ';
-    } else {
-      echo '<a href="/Login"><div class="">Login</div></a>';
-    }?>
-  </h5>
+  <ul class="Lista">
+    <a href="?op=clean"><li class="">Logout</li></a>
+    <?php LeftMenu(); ?>
+    <a href="/Login"><li class="">Login</li></a>
+  </ul>
 </div>
 <div class="Page">
