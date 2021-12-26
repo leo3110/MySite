@@ -13,6 +13,8 @@ $(function(){
     var b = $(this).attr("objetivo");
     xmlhttp.open("get","script/ajax.php?a="+a+"&&b="+b, true);
     xmlhttp.send();
+	$('#leo_tk').text(leo_tk);
+	$('#karu_tk').text(karu_tk);
   })
 });
 

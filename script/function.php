@@ -32,6 +32,6 @@ function TKBusca(){
 	fclose($bancoR);
 	$json = json_decode($json);
 	foreach ($json as $key => $value) {
-		echo "document.getElementById('$key').innerHTML = '$value';	";
+		echo "var $key = $value;";
 	}
 }
