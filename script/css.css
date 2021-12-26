@@ -37,15 +37,20 @@ a,a:active,a:hover{
 	color: #000;
 }
 .LeftMenu{
-	min-width: 15vw;
-	height: 100vh;
-	background-color: #e03434;
-	display: flex;
+  position: absolute;
+  min-width: 3vw;
+  aspect-ratio:1;
+	background-color: var(--corVermelho);
+  z-index: 1;
+}
+.LeftMenu:hover{
+  color: white;
+	min-width: 7vw;
 	text-align: justify;
 	justify-content: center;
 }
 .Page{
-	width: auto;
+	width: 100%;
 	position: relative;
 	display: flex;
 	align-items: center;
