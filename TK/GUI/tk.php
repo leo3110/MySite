@@ -5,9 +5,7 @@ $(function(){
     var btn = $(this).attr("alvo");
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
         document.getElementById(btn).innerHTML = this.responseText;
-      }
     };
     var a = $(this).attr("alvo");
     var b = $(this).attr("objetivo");
@@ -21,7 +19,7 @@ $(function(){
 	<div class="Player">
 		<h1 class="Titulo">Leo</h1>
 		<div class="IMG">
-			<img src="img\jaeyun.png">
+			<img src="img/jaeyun.png">
 		</div>
 		<div class="IMGBaixo">
 			<h1 class="">Matou o karu <span id="leo_tk">0</span> vezes</h1>
@@ -36,7 +34,7 @@ $(function(){
 	<div class="Player">
 		<h1 class="Titulo">Karu</h1>
 		<div class="IMG">
-			<img src="img\lin fei.png" style="transform: scaleX(-1);">
+			<img src="img/lin fei.png" style="transform: scaleX(-1);">
 		</div>
 		<div class="IMGBaixo">
 			<h1 class="">Matou o leo <span id="karu_tk">0</span> vezes</h1>

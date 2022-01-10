@@ -1,17 +1,25 @@
 <div class="Home">
   <div class="Grid">
 
-    <div class="quadradao">
-      <a href="?tela=tk"><p>BRAWLHALLA TK</p></a>
+    <div class="Quadro">
+      <a href="/TK">
+        <span>BRAWLHALLA TK</span>
+      </a>
     </div>
-    <div class="quadradao">
-      <p>Sistema 2</p>
+    <div class="Quadro">
+      <a href="#">
+        <span>Sistema 2</span>
+      </a>
     </div>
-    <div class="quadradao">
-      <p>Sistema 3</p>
+    <div class="Quadro">
+      <a href="#">
+        <span>Sistema 3</span>
+      </a>
     </div>
-    <div class="quadradao">
-      <p>Sistema 4</p>
+    <div class="Quadro">
+      <a href="#">
+        <span>Sistema 4</span>
+      </a>
     </div>
   </div>
 </div>

@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <?php echo "OOPS!"; ?>
-    <a href="../"><span>Voltar a segurança</span></a>
-  </body>
-</html>
+<?php
+  include 'script/function.php';
+  include 'GUI/header.php';
+  include 'GUI/tk.php';
+  include 'GUI/footer.php';
