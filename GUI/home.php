@@ -17,8 +17,8 @@
       </a>
     </div>
     <div class="Quadro">
-      <a href="#">
-        <span>Sistema 4</span>
+      <a href="/Me">
+        <span>About Me</span>
       </a>
     </div>
   </div>
