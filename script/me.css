@@ -20,6 +20,8 @@ body::-webkit-scrollbar{
 *{
     box-sizing: border-box;
 }
+.Linha{
+}
 .Footer{
     position: fixed;
     display: block;
@@ -33,9 +35,6 @@ body::-webkit-scrollbar{
 }
 .Flex{
 	display: flex;
-}
-.Flex .Wrap{
-  flex-wrap: wrap;
 }
 .CentroY{
 	align-items: center;

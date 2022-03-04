@@ -1,0 +1,55 @@
+.Body{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.TK{
+    width: 100%;
+    background-image: url("../tk/img/wpp");
+    background-size: cover;
+    height:100%;
+    display: flex;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+.Player{
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.IMG{
+    width: 100%;
+    margin: auto;
+}
+img{
+    width: 30vw;
+}
+.Button, .Button::after{
+    margin: 1em auto;
+    border-radius: 16px;
+    border: solid 1px var(--corPreto);
+}
+.Button{
+    position: relative;
+    background-color: var(--corVermelho);
+    min-height: 1rem;
+    aspect-ratio: 1;
+    margin: auto;
+    padding: auto;
+    font-size: 50%;
+}
+.Button:hover::after{
+    display: block;
+    position: absolute;
+    content: attr(objetivo);
+    color: #fff;
+    top: 100%;
+    right: -50%;
+    width: 3rem;
+    background: #0006;
+    white-space: nowrap;
+}

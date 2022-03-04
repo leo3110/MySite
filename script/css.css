@@ -3,6 +3,7 @@
     --corTexto: #e02424;
     --corPreto: #171717;
     --corFundo: #521f00;
+    font-size: 3vw;
 }
 html,body{
     height: 100%;
@@ -11,97 +12,46 @@ html,body{
     margin: 0;
 }
 body{
-    -ms-overflow-style: none;
-    scrollbar-width:none;
+    -ms-overflow-style: none; \\ scrollbar
+    scrollbar-width:none;     \\ scrollbar
 }
 body::-webkit-scrollbar{
-    display: none;
+    display: none;            \\ scrollbar
 }
-.Body{
-    margin: 0 auto;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-a,a:active,a:hover{
-    color: var(--corTexto);
-    text-decoration: none;
+*{
+    box-sizing: border-box;
 }
 .Footer{
-    position: fixed;
     display: block;
+    min-height: 5vh;
     width: 100%;
-    bottom:0;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #e03434;
     color: #000;
 }
-.LeftMenu{
-    position: absolute;
-    min-width: 3vw;
-    aspect-ratio:1;
-    background-color: var(--corVermelho);
-    z-index: 1;
+.Flex{
+	display: flex;
 }
-.LeftMenu:hover{
-    color: white;
-    min-width: 7vw;
-    text-align: justify;
-    justify-content: center;
+.Flex .Wrap{
+	flex-wrap: wrap;
 }
-.Home{
-    width: 50vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+.CentroY{
+	align-items: center;
 }
-.Grid{
-    display: grid;
-    grid: 20vw 20vw / 20vw 20vw;
+.Col{
+	flex-direction: column;
 }
-a{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+.JCC{
+	justify-content: center;
 }
-.Quadro{
-    margin: auto;
-    width: 10vw;
-    height: 10vw;
-    border: solid 1px #fff;
+.JCSA{
+	justify-content: space-around;
 }
-.Quadro:hover{
-    background: #fff3;
-    transition: background 0.1s;
+.JCSB{
+	justify-content: space-between;
 }
-.Quadro span{
-    display: block;
-    margin: auto;
+.Wrap{
+	flex-wrap: wrap;
 }
-label, input{
-    box-sizing: border-box;
-    width: 95%;
-    height: 5vh;
-    margin: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-input{
-    position: relative;
-    background: var(--corPreto);
-    border: solid 3px 1em var(--corVermelho);
-}
-/* .PHP{
-background-color: #556594;
-border-radius: 16px;
-color: black;
-text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-} */

@@ -1,0 +1,107 @@
+:root{
+    --corVermelho: #e03434;
+    --corTexto: #e02424;
+    --corPreto: #171717;
+    --corFundo: #521f00;
+}
+html,body{
+    height: 100%;
+    background-color: var(--corPreto);
+    color: var(--corTexto);
+    margin: 0;
+}
+body{
+    -ms-overflow-style: none;
+    scrollbar-width:none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.Body{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+a,a:active,a:hover{
+    color: var(--corTexto);
+    text-decoration: none;
+}
+.Footer{
+    position: fixed;
+    display: block;
+    width: 100%;
+    bottom:0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #e03434;
+    color: #000;
+}
+.LeftMenu{
+    position: absolute;
+    min-width: 3vw;
+    aspect-ratio:1;
+    background-color: var(--corVermelho);
+    z-index: 1;
+}
+.LeftMenu:hover{
+    color: white;
+    min-width: 7vw;
+    text-align: justify;
+    justify-content: center;
+}
+.Home{
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.Grid{
+    display: grid;
+    grid: 20vw 20vw / 20vw 20vw;
+}
+a{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.Quadro{
+    margin: auto;
+    width: 10vw;
+    height: 10vw;
+    border: solid 1px #fff;
+}
+.Quadro:hover{
+    background: #fff3;
+    transition: background 0.1s;
+}
+.Quadro span{
+    display: block;
+    margin: auto;
+}
+label, input{
+    box-sizing: border-box;
+    width: 95%;
+    height: 5vh;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    position: relative;
+    background: var(--corPreto);
+    border: solid 3px 1em var(--corVermelho);
+}
+/* .PHP{
+background-color: #556594;
+border-radius: 16px;
+color: black;
+text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+} */
