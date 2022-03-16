@@ -18,6 +18,10 @@ body{
 body::-webkit-scrollbar{
     display: none;            \\ scrollbar
 }
+a,a:active,a:hover{
+    color: var(--corTexto);
+    text-decoration: none;
+}
 *{
     box-sizing: border-box;
 }
