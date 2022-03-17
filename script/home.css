@@ -1,3 +1,7 @@
+.Welcome{
+    height: 100vh;
+    padding: 1em;
+}
 .LeftMenu{
     position: absolute;
     min-width: 3vw;
@@ -11,7 +15,7 @@
     text-align: justify;
     justify-content: center;
 }
-.Home{
+.OutGrid{
     width: 50vw;
     margin: auto;
     display: flex;
@@ -30,17 +34,17 @@ a{
     align-items: center;
     align-content: center;
 }
-.Quadro{
+.Frame{
     margin: auto;
     width: 10vw;
     height: 10vw;
     border: solid 1px #fff;
 }
-.Quadro:hover{
+.Frame:hover{
     background: #fff3;
     transition: background 0.1s;
 }
-.Quadro span{
+.Frame span{
     display: block;
     margin: auto;
 }
