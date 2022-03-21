@@ -10,6 +10,7 @@ html,body{
     background-color: var(--corPreto);
     color: var(--corTexto);
     margin: 0;
+    scroll-behavior: smooth;
 }
 body{
     -ms-overflow-style: none;
