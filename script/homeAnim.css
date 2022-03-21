@@ -10,7 +10,7 @@
     border-color:white;
     border-style: solid;
     border-width: 0 0.1em 0.1em 0;
-    rotate: 45deg;
+    transform: rotate(45deg);
 }
 .OutArrow:hover .Arrow{
     animation: rolar 2s infinite;
@@ -18,18 +18,18 @@
 @keyframes rolar {
     0%{
         opacity: 100%;
-        transform: translate(0, 0);
+        transform: translate(0, 0) rotate(45deg);
     }
     25%{
         opacity: 0%;
-        transform: translate(1em, 1em);
+        transform: translate(0, 1em) rotate(45deg);
     }
     50%{
         opacity: 0%;
-        transform: translate(-1em, -1em);
+        transform: translate(0, -1em) rotate(45deg);
     }
     75%{
         opacity: 100%;
-        transform: translate(0, 0);
+        transform: translate(0, 0) rotate(45deg);
     }
 }

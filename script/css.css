@@ -24,6 +24,7 @@ a,a:active,a:hover{
 }
 *{
     box-sizing: border-box;
+    padding: 0;
 }
 .Footer{
     display: block;
