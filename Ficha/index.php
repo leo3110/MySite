@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <?php echo "OOPS!"; ?>
-    <a href="../"><span>Voltar a segurança</span></a>
-  </body>
-</html>
+<?php
+$_SESSION['op']='Login';
+include 'script/function.php';
+include '../GUI/header.php';
+include 'GUI/login.php';
+include '../GUI/footer.php';

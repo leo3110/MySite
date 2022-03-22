@@ -43,14 +43,14 @@ a,a:active,a:hover{
 .Flex .Wrap{
 	flex-wrap: wrap;
 }
-.CentroY{
+.Centro, .CentroY{
 	align-items: center;
+}
+.Centro, .CentroX{
+	justify-content: center;
 }
 .Col{
 	flex-direction: column;
-}
-.CentroX{
-	justify-content: center;
 }
 .JCSA{
 	justify-content: space-around;

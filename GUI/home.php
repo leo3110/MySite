@@ -16,8 +16,8 @@
                 </a>
             </div>
             <div class="Frame">
-                <a href="#">
-                    <span>Sistema 2</span>
+                <a href="/Ficha">
+                    <span>Ficha</span>
                 </a>
             </div>
             <div class="Frame">
