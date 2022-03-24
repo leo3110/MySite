@@ -1,9 +1,9 @@
 <main>
-    <div class="OutArrow Flex CentroX CentroY">
 <a href="#Footer">
+    <div class="OutArrow Flex CentroX CentroY">
         <div class="Arrow"></div>
-</a>
     </div>
+</a>
     <div class="Welcome Flex CentroX CentroY">
         Bem Vindo!
     </div>
