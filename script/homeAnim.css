@@ -13,7 +13,7 @@
     transform: rotate(45deg);
 }
 .OutArrow:hover .Arrow{
-    animation: rolar 2s infinite;
+    animation: rolar 1.5s infinite;
 }
 @keyframes rolar {
     0%{
