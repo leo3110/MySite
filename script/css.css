@@ -12,6 +12,9 @@ html,body{
     margin: 0;
     scroll-behavior: smooth;
 }
+main{
+    height: inherit;
+}
 body{
     -ms-overflow-style: none;
     scrollbar-width:none;
@@ -37,6 +40,8 @@ a,a:active,a:hover{
     background-color: #e03434;
     color: #000;
 }
+.FullWidth{width: 100vw}
+.FullHeight{min-height: 100vh}
 .Flex{display: flex;}
 .Flex .Wrap{flex-wrap: wrap;}
 .Centro, .CentroY{align-items: center;}
