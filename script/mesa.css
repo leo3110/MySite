@@ -1,0 +1,10 @@
+.OutQuadro{
+
+}
+.Quadro{
+
+}
+main *{
+    background: green;
+    border: solid 3px red;
+}

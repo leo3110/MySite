@@ -13,7 +13,7 @@ html,body{
     scroll-behavior: smooth;
 }
 main{
-    height: inherit;
+    min-height: inherit;
 }
 body{
     -ms-overflow-style: none;

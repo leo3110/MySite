@@ -27,7 +27,6 @@
     grid: 20vw 20vw / 20vw 20vw;
 }
 a{
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,35 +1,35 @@
 <main>
-<a href="#Footer">
-    <div class="OutArrow Flex CentroX CentroY">
-        <div class="Arrow"></div>
-    </div>
-</a>
+    <a href="#Footer">
+        <div class="OutArrow Flex CentroX CentroY">
+            <div class="Arrow"></div>
+        </div>
+    </a>
     <div class="Welcome Flex CentroX CentroY">
         Bem Vindo!
     </div>
     <div class="OutGrid">
         <div class="Grid">
 
-            <div class="Frame">
-                <a href="/TK">
+            <a class="Frame" href="/TK">
+                <div>
                     <span>BRAWLHALLA TK</span>
-                </a>
-            </div>
-            <div class="Frame">
-                <a href="/Ficha">
+                </div>
+            </a>
+            <a class="Frame" href="/Ficha">
+                <div>
                     <span>Ficha</span>
-                </a>
-            </div>
-            <div class="Frame">
-                <a href="#">
+                </div>
+            </a>
+            <a class="Frame" href="#">
+                <div>
                     <span>Sistema 3</span>
-                </a>
-            </div>
-            <div class="Frame">
-                <a href="#">
+                </div>
+            </a>
+            <a class="Frame" href="#">
+                <div>
                     <span>About Me</span>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </div>
 </main>

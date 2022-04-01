@@ -1,6 +1,6 @@
 <main>
-    <div class="OutLogin Flex Centro">
-        <div class="Login Flex CentroY">
+    <div class="OutLogin Flex FullHeight FullWidth CentroX">
+        <div class="Login Flex FullHeight FullWidth CentroY">
             <form class="Form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <?php if (isset($_SESSION['Login'])&&$_SESSION['Login']=='erro') echo "<h6>ERRO AO LOGAR! TENTE NOVAMENTE</h6> "; ?>
                 <div class='Input'><label for="Id"><i class="fa-solid fa-user"> :</i></label> <input type="text" name="Id" id="Id"></div>
