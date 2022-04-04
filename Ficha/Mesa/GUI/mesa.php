@@ -1,7 +1,7 @@
 <main>
-    <div class="OutQuadro Flex Col FullWidth FullHeight">
-        <div class="Quadro Flex JCSA">
-            <div class="Flex Col">
+    <div class="OutQuadro FullWidth FullHeight Flex Col JCSA">
+        <div class="Quadro Flex JCSB">
+            <div class="Atrib Flex Col">
                 <div><span class=""><i class=""></i>  Vida: <span id="vidaT_tela">20</span>/<span id="vidaM_tela">20</span></span></div>
                 <div><span class=""><i class=""></i>  Mana: <span id="manaT_tela">20</span>/<span id="manaM_tela">20</span>  </span></div>
                 <div><span class=""><i class=""></i>  Vigor: <span id="vigor_tela">  </span></div>
@@ -13,7 +13,7 @@
                 <div><span class=""><i class=""></i>  Conhecimento: <span id="conhe_tela">  </span></div>
             </div>
             <div class="">
-                <h1 class="text-center"><span id="nome_tela"></span> - <span id="raca_tela"></span> </h1>
+                <h1 class="text-center"><?php echo nomeChar(); ?></h1>
                 <div>Nivel: <span id="nivel_tela"></span></div>
                 <table>
 
