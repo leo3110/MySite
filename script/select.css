@@ -1,0 +1,11 @@
+.Select{
+    height: 100%;
+    border-left: 2px solid var(--corFundo);
+    border-right: 2px solid var(--corFundo);
+}
+.Char{
+    width: 10%;
+    aspect-ratio:1;
+    border: solid 3px var(--corFundo);
+    border-radius: 16px;
+}

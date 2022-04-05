@@ -1,0 +1,35 @@
+input, input:focus-visible,button{
+    background: #0000;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bolder;
+}
+.OutLogin{
+    height: 100%;
+}
+.Login{
+    min-height: 100%;
+    width: 30%;
+    border-left: 2px solid var(--corFundo);
+    border-right: 2px solid var(--corFundo);
+}
+.Form{
+    width: 100%;
+}
+.Input{
+    margin: 3%;
+    border-bottom: 1px solid var(--corFundo);
+}
+.Botao{
+    position: relative;
+    float: right;
+    right: 3em;
+    margin-top: 3%;
+}
+input{
+    height: 1rem;
+    width: 90%;
+    float: right;
+    text-align: center;
+}

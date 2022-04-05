@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['op']='home';
 include 'script/function.php';
 include 'GUI/header.php';
 
@@ -13,16 +14,12 @@ if (isset($_GET['op'])&&($_GET['op']=='clean'||$_GET['op']=='logout')) {
   clean();
   include 'GUI/ficha.php';
 }
-elseif (isset($_GET['tela'])&&checkTela($_GET['tela'])) {
-  $_SESSION['op']=$_GET['tela'];
-  include 'GUI/'.$_GET['tela'].'.php';
-}
 elseif (!isset($_SESSION['op'])) {
   include "GUI/home.php";
   $_SESSION['op']='home';
 }
 else {
-  echo "erro";
+  include 'GUI/Home.php';
 }
 
 include 'GUI/footer.php';

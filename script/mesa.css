@@ -1,0 +1,14 @@
+.OutQuadro{
+
+}
+.Quadro{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.Atrib{
+    font-size: 1.5rem;
+    border-right: 3px gray solid;
+    border-left: 3px gray solid;
+    border-radius: 13px;
+    padding: 1em;
+}

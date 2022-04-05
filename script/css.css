@@ -1,212 +1,74 @@
 :root{
-	--corVermelho: #e03434;
-	--corTexto: #e02424;
-	--corPreto: #171717;
-	--corFundo: #521f00;
+    --corVermelho: #e03434;
+    --corTexto: #e02424;
+    --corPreto: #222;
+    --corFundo: #e03434;
+    font-size: 1vw;
+    color: white;
 }
 html,body{
-	height: 100%;
-	background-color: var(--corPreto);
-	color: var(--corTexto);
-	margin: 0;
+    height: 100%;
+    background-color: var(--corPreto);
+    margin: 0;
+    scroll-behavior: smooth;
+}
+main{
+    min-height: inherit;
 }
 body{
-	-ms-overflow-style: none; \\ scrollbar
-	scrollbar-width:none;     \\ scrollbar
+    -ms-overflow-style: none;
+    scrollbar-width:none;
 }
 body::-webkit-scrollbar{
-	display: none;            \\ scrollbar
+    display: none;
 }
-.Body{
-	margin: 0 auto;
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-}
-
 a,a:active,a:hover{
-	color: #000;
-	text-decoration: none;
+    color: var(--corTexto);
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
 }
 .Footer{
-	height: 4vh;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	background-color: #e03434;
-	color: #000;
+    display: block;
+    min-height: 5vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #e03434;
+    color: #000;
 }
-.LeftMenu{
-  position: absolute;
-  min-width: 3vw;
-  aspect-ratio:1;
-	background-color: var(--corVermelho);
-  z-index: 1;
+.FullWidth{width: 100vw}
+.FullHeight{min-height: 100vh}
+.Flex{display: flex;}
+.Flex .Wrap{flex-wrap: wrap;}
+.Centro, .CentroY{align-items: center;}
+.Centro, .CentroX{justify-content: center;}
+.Col{flex-direction: column;}
+.JCSA{justify-content: space-around;}
+.JCSB{justify-content: space-between;}
+.Wrap{flex-wrap: wrap;}
+.col{width: auto;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
 }
-.LeftMenu:hover{
-  color: white;
-	min-width: 7vw;
-	text-align: justify;
-	justify-content: center;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-.Page{
-	width: 100%;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-.Top{
-	text-align: center;
-	font-size: 10rem;
-	margin: auto;
-	background: var(--corPreto);
-	color: #dfdfdf9d;
-}
-.ContentRed, .ContentGray{
-	text-align: center;
-	align-items: center;
-	color: #000;
-	margin: auto;
-}
-.ContentRed{
-	width: 95%;
-	padding: 0.5rem;
-	background-color: #e03434;
-	margin: 1rem auto;
-	border-radius: 6px;
-	display: flex;
-}
-.ContentGray{
-	min-height: 10vh;
-	font-size: 1.6rem;
-	background-color: #cfcfcf;
-	margin: 0;
-	padding: 0;
-}
-.Square{
-	font-size: 3rem;
-	text-align: center;
-	background-color: #eee;
-	border-style: solid;
-	border-radius: 20px;
-	width: 10rem !important;
-	aspect-ratio:1 !important;
-	margin: 1.5rem;
-}
-.Text{
-	padding: 1rem;
-	font-size: 1.6em;
-	width: auto;
-	display: flex;
-	text-align: justify;
-	justify-content: center;
-	align-items: center;
-}
-.InSquare{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	height: 100%;
-}
-.Login{
-	width: 80vh;
-	aspect-ratio:1;
-	border-radius: 10%;
-	border: solid 2px #e03434;
-	font-size: 1.7rem;
-}
-.Home{
-	width: 50vw;
-	margin: auto;
-}
-.Grid{
-	display: grid;
-	grid: 25vw 25vw / 25vw 25vw;
-}
-.quadradao{
-	margin: auto;
-	width: 20vw;
-	aspect-ratio:1;
-	border: solid 6px #fff;
-}
-.TK{
-	min-height: 96vh;
-	width: 100%;
-	background-image: url('../img/wpp.jpg');
-	background-size: cover;
-	height:100%;
-	display: flex;
-	color: #fff;
-	text-shadow: 1px 1px 1px #000;
-}
-.Player{
-	width: 50%;
-	margin: 0;
-	box-sizing: border-box;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-.IMG{
-	width: 100%;
-	margin: auto;
-}
-img{
-	width: 30vw;
-}
-.Button{
-	position: relative;
-	width: 3rem;
-	aspect-ratio:1;
-	margin: 1em auto;
-	background-color: var(--corVermelho);
-	border: solid 2px var(--corPreto);
-	border-radius: 16px;
-}
-/* .Button[data-tool-tip]:hover::after{
-	content: attr(data-tool-tip);
-	display: block;
-	position: absolute;
-	height: 1rem;
-	aspect-ratio:1;
-	margin: auto;
-	top: 100%;
-	right: 25%;
-	padding: 1em 0;
-	background: #0003;
-} */
-.nota{
-	display: inline;
-	width: 100%;
-}
-label, input{
-	box-sizing: border-box;
-	width: 95%;
-	height: 5vh;
-	margin: 1em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-input{
-	position: relative;
-	background: var(--corPreto);
-	border: solid 3px 1em var(--corVermelho);
-}
-label::before{
-	content: '';
-	position: absolute;
-	align-content:  center;
-	width: 80%;
-	height: 3px;
-	border-bottom: solid 2px;
-}
-/* .PHP{
-background-color: #556594;
-border-radius: 16px;
-color: black;
-text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-} */
