@@ -12,3 +12,11 @@
     border-radius: 13px;
     padding: 1em;
 }
+.Left,.Right{
+    gap:1em;
+}
+.Left div{
+    border-right: 0.1em gray solid;
+    padding-right: 1em;
+    margin-right: 1em;
+}

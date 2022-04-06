@@ -2,13 +2,13 @@
     <div class="Select FullHeight FullWidth Flex Centro">
         <!-- INICIO OBJETOS -->
 
-        <a class="Char Flex Centro" href="Mesa/index.php?char=Finn">
-            <div class="Flex Centro Col">
+            <div class="Char Flex Centro Col">
                 <i class="fa-solid fa-user"></i>
                 <span class="Name">Nome</span>
-                <button type="button" name="button">Entrar</button>
+                <a href="Mesa/index.php?char=Finn">
+                    <button type="button" name="button">Entrar</button>
+                </a>
             </div>
-        </a>
 
         <!-- FIM OBJETOS -->
     </div>
