@@ -21,21 +21,20 @@ if (isset($_GET['char'])) {
                 </div>
                 <div class="Right Flex Col"><?php $class->printAtrib(); ?></div>
             </div>
-            <div class="Info Flex">
-                <h1 class="text-center"><?php echo $class->nomeChar(); ?></h1>
-                <div>Nivel: </div>
+            <div class="Info Flex Col CentroY col-9">
+                <?php echo $class->nomeChar(); ?>
                 <table>
 
                 </table>
             </div>
         </div>
-        <div class="">
-            <div class="">
-                <button id="dado"  type="button" class="" onclick="D20()" onkeyup="mesaDeDados()">D20</button>
-                <button id="dado"  type="button" class="" onclick="D10()" onkeyup="mesaDeDados()">D10</button>
-                <button id="dado"  type="button" class="" onclick="D100()" onkeyup="mesaDeDados()">D100</button>
-                <button id="dado"  type="button" class="" onclick="D6()" onkeyup="mesaDeDados()">D6</button>
-                <button id="dado"  type="button" class="" onclick="Moeda()" onkeyup="mesaDeDados()">Cara ou coroa</button>
+        <div class="Quadro Flex JCSB">
+            <div class="Dados">
+                <button type="button" class="Dado" onclick="D20()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d10"> </i></button>
+                <button type="button" class="Dado" onclick="D10()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d10"> </i></button>
+                <button type="button" class="Dado" onclick="D100()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d10"> </i></button>
+                <button type="button" class="Dado" onclick="D6()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d10"> </i></button>
+                <button type="button" class="Dado" onclick="Moeda()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d10"> </i></button>
             </div>
             <div class="">
                 <span id="resultado">"MESA"</span>

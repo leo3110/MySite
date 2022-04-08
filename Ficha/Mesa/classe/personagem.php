@@ -57,6 +57,9 @@
         echo "<div>".$this->getConhe()."</div>";
     }
     function nomeChar(){
-        echo $this->getNome()." - ".$this->getRaca();
+        echo "<h1>";
+        echo "<div>".$this->getNome()." - ".$this->getRaca()."</div>";
+        echo "<div>Nivel: ".$this->Nivel."</div>";
+        echo "</h1>";
     }
   }

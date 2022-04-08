@@ -7,7 +7,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    <script src="https://kit.fontawesome.com/e605e11735.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f990165b2c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="/Script/css.css">
     <link rel="stylesheet" type="text/css" href="/Script/<?php echo $_SESSION['op'];?>.css">
     <link rel="stylesheet" type="text/css" href="/Script/<?php echo $_SESSION['op'];?>Anim.css">
