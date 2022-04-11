@@ -22,23 +22,22 @@ if (isset($_GET['char'])) {
                 <div class="Right Flex Col"><?php $class->printAtrib(); ?></div>
             </div>
             <div class="Info Flex Col CentroY col-9">
-                <?php echo $class->nomeChar(); ?>
-                <table>
-
-                </table>
+                <?php echo $class->printName(); ?>
+                <?php echo $class->printEquip(); ?>
             </div>
         </div>
         <div class="Quadro Flex JCSB">
             <div class="Dados">
-                <button type="button" class="Dado" onclick="D20()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d10"> </i></button>
-                <button type="button" class="Dado" onclick="D10()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d10"> </i></button>
-                <button type="button" class="Dado" onclick="D100()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d10"> </i></button>
-                <button type="button" class="Dado" onclick="D6()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d10"> </i></button>
-                <button type="button" class="Dado" onclick="Moeda()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d10"> </i></button>
+                <button type="button" class="Dado" onclick="D20()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d20">D20</i></button>
+                <button type="button" class="Dado" onclick="D10()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d6">D10</i></button>
+                <button type="button" class="Dado" onclick="D100()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d6">D100</i></button>
+                <button type="button" class="Dado" onclick="D6()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d6">D6</i></button>
+                <button type="button" class="Dado" onclick="Moeda()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d6">Cara ou Coroa</i></button>
             </div>
             <div class="">
                 <span id="resultado">"MESA"</span>
             </div>
         </div>
     </div>
+    <?php echo $class->printEquip(); ?>
 </main>
