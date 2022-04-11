@@ -1,6 +1,7 @@
 <?php
-  class Personagem {
-    private $Nome,$Nivel,$Raca,$Vigor,$Forca,$Destr,$Agili,$Resis,$Intel,$Conhe,$Inven,$Equip;
+include 'armas.php';
+class Personagem extends Armas{
+    private $Nome,$Nivel,$Raca,$Vigor,$Forca,$Destr,$Agili,$Resis,$Intel,$Conhe,$Inven,$Armas,$Equip;
     public function getNome(){return $this->Nome;}
     public function setNome($Nome){$this->Nome = $Nome;}
     public function getNivel(){return $this->Nivel;}
@@ -23,6 +24,8 @@
     public function setConhe($Conhe){$this->Conhe = $Conhe;}
     public function getInven(){return $this->Inven;}
     public function setInven($Inven){$this->Inven = $Inven;}
+    public function getArmas(){return $this->Armas;}
+    public function setArmas($Armas){$this->Armas = $Armas;}
     public function getEquip(){return $this->Equip;}
     public function setEquip($Equip){$this->Equip = $Equip;}
     function __construct(){
@@ -41,7 +44,9 @@
         $this->setIntel($json->Intel);
         $this->setConhe($json->Conhe);
         $this->setInven($json->Inven);
+        $this->setArmas($this->returnArmas());
         $this->setEquip($json->Equip);
+
     }
     // function printObj(){
     //     $json = json_encode(array('Nome'=>$this->Nome,'Nivel'=>$this->Nivel,'Raca'=>$this->Raca,'Vigor'=>$this->Vigor,'Forca'=>$this->Forca,'Destr'=>$this->Destr,'Agili'=>$this->Agili,'Resis'=>$this->Resis,'Intel'=>$this->Intel,
@@ -65,9 +70,11 @@
         echo "<div>Nivel: ".$this->Nivel."</div>";
         echo "</h1>";
     }
-    function printEquip(){
-        foreach ($this->getEquip() as $key => $value) {
+    function printArmas(){
+        echo "<h3>";
+        foreach ($this->getArmas() as $key => $value) {
             echo "$key $value";
         }
+        echo "</h3>";
     }
-  }
+}

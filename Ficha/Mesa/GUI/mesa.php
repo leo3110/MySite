@@ -23,7 +23,7 @@ if (isset($_GET['char'])) {
             </div>
             <div class="Info Flex Col CentroY col-9">
                 <?php echo $class->printName(); ?>
-                <?php echo $class->printEquip(); ?>
+                <?php echo $class->printArmas(); ?>
             </div>
         </div>
         <div class="Quadro Flex JCSB">
@@ -39,5 +39,4 @@ if (isset($_GET['char'])) {
             </div>
         </div>
     </div>
-    <?php echo $class->printEquip(); ?>
 </main>
