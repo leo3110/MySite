@@ -9,6 +9,19 @@
     font-size: 1.5rem;
     border-right: 3px gray solid;
     border-left: 3px gray solid;
-    border-radius: 13px;
+    border-radius: 1em;
     padding: 1em;
+}
+.Left,.Right{
+    gap:1em;
+}
+.Left div{
+    border-right: 0.1em gray solid;
+    padding-right: 1em;
+    margin-right: 1em;
+}
+.Info{
+    border-right: 3px gray solid;
+    border-left: 3px gray solid;
+    border-radius: 1em;
 }

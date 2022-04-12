@@ -1,0 +1,4 @@
+{
+    "espada grama":     {"vig":0,"for":0,"des":0,"agi":4,"res":0,"int":0,"con":0,"pas":"passiva","desc":"espada leve feita de grama, não pode ser removida"},
+    "espada demonio":   {"vig":0,"for":4,"des":0,"agi":0,"res":0,"int":0,"con":0,"pas":"passiva","desc":"mais dano contra angelicais"}
+}
