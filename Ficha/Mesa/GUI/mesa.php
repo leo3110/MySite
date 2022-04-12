@@ -21,10 +21,24 @@ if (isset($_GET['char'])) {
                 </div>
                 <div class="Right Flex Col"><?php $class->printAtrib(); ?></div>
             </div>
-            <div class="Info Flex Col CentroY col-9">
-                <?php echo $class->printName(); ?>
-                <?php echo $class->printArmas(); ?>
-            </div>
+            <div class="Info Flex Col col-9">
+                <div class="Top Flex">
+                    <div class="LeftInfo Flex col-3">
+                        <?php echo $class->printName(); ?>
+                    </div>
+                    <div class="RightInfo Flex Col JCSA col-8">
+                        <div class="Arma">
+                            <h3>espada 1</h3>
+                        </div>
+                        <div class="Arma">
+                            <h3>espada 2</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="Bottom">
+
+                </div>
+            </div><?php echo $class->printArmas(); ?>
         </div>
         <div class="Quadro Flex JCSB">
             <div class="Dados">

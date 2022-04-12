@@ -21,14 +21,13 @@
     public function setPassi($Passi){$this->Passi = $Passi;}
     public function getDescr(){return $this->Descr;}
     public function setDescr($Descr){$this->Descr = $Descr;}
+    public function jsonString($v1){
+        return $v1;
+    }
     public function returnArmas(){
         $bancoR = fopen('DB/Armas.json','r') or die('erro ao abrir armas');
         $json = fread($bancoR,filesize('DB/Armas.json'));
         $json = json_decode($json);
-        $armas = [];
-        foreach ($json as $key => $value) {
-            array_push($armas, $key);
-        }
-        return $armas;
+        print_r(array_reduce($json,"jsonString"));
     }
   }

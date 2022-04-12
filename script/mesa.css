@@ -25,3 +25,10 @@
     border-left: 3px gray solid;
     border-radius: 1em;
 }
+.Arma{
+    border-top: 3px gray solid;
+    border-bottom: 3px gray solid;
+    border-radius: 5px;
+    width: 100%;
+    padding: .3em;
+}
