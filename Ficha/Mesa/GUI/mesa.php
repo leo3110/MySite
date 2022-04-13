@@ -36,9 +36,9 @@ if (isset($_GET['char'])) {
                     </div>
                 </div>
                 <div class="Bottom">
-
+                    <?php echo $class->printArmas(); ?>
                 </div>
-            </div><?php echo $class->printArmas(); ?>
+            </div>
         </div>
         <div class="Quadro Flex JCSB">
             <div class="Dados">

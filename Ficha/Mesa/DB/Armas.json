@@ -1,4 +1,17 @@
 {
-    "espada grama":     {"pas":"não pode ser removida","desc":"espada leve feita de grama","agi":4},
-    "espada demonio":   {"pas":"mais dano contra angelicais","desc":"espada feita de sangue de demonios aprisionados","for":4}
+    "espada grama":  {
+        "pas":"não pode ser removida",
+        "desc":"espada leve feita de grama",
+        "agi":4
+    },
+    "espada demonio":{
+        "pas":"mais dano contra angelicais",
+        "desc":"espada feita de sangue de demonios aprisionados",
+        "for":4
+    },
+    "espada de merda":{
+        "pas":"fede",
+        "desc":"literalmente de merda, mas até que boa",
+        "for":2
+    }
 }
