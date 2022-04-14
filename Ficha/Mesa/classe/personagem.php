@@ -72,7 +72,15 @@ class Personagem extends Armas{
     }
     function printArmas(){
         echo "<h3>";
-        $this->returnArmas($this->getArmas());
+        foreach ($this->returnArmas($this->getArmas()) as $key => $value) {
+            echo "$key{<br>";
+            foreach ($value as $kkey => $vvalue) {
+                if ($kkey == 0) echo "Descrição: $vvalue<br>";
+                if ($kkey == 1) echo "Passiva: $vvalue<br>";
+                if ($kkey == 2) echo "Atrib: $vvalue<br>";
+            }
+            echo"<br>}<br>";
+        }
         echo "</h3>";
     }
 }
