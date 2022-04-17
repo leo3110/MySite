@@ -15,6 +15,7 @@
                 }
             }
         }
+		print_r($armas);
         return $armas;
     }
   }

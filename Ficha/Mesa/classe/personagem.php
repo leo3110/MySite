@@ -73,13 +73,15 @@ class Personagem extends Armas{
     function printArmas(){
         echo "<h3>";
         foreach ($this->returnArmas($this->getArmas()) as $key => $value) {
-            echo "$key{<br>";
+			echo "<div class='Arma Flex JCSB'>";
+            echo "<div ";
             foreach ($value as $kkey => $vvalue) {
-                if ($kkey == 0) echo "Descrição: $vvalue<br>";
-                if ($kkey == 1) echo "Passiva: $vvalue<br>";
-                if ($kkey == 2) echo "Atrib: $vvalue<br>";
+                if ($kkey == 0) echo "Tooltip1='Descrição: $vvalue'";
+                if ($kkey == 1) echo "Tooltip2='Passiva: $vvalue'";
+                if ($kkey == 2) echo "Tooltip3='Atrib: $vvalue'";
             }
-            echo"<br>}<br>";
+			echo ">$key</div>";
+			echo "</div>";
         }
         echo "</h3>";
     }

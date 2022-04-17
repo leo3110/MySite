@@ -27,16 +27,10 @@ if (isset($_GET['char'])) {
                         <?php echo $class->printName(); ?>
                     </div>
                     <div class="RightInfo Flex Col JCSA col-8">
-                        <div class="Arma">
-                            <h3>espada 1</h3>
-                        </div>
-                        <div class="Arma">
-                            <h3>espada 2</h3>
-                        </div>
+	                    <?php echo $class->printArmas(); ?>
                     </div>
                 </div>
                 <div class="Bottom">
-                    <?php echo $class->printArmas(); ?>
                 </div>
             </div>
         </div>

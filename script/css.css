@@ -50,6 +50,7 @@ a,a:active,a:hover{
 .JCSA{justify-content: space-around;}
 .JCSB{justify-content: space-between;}
 .Wrap{flex-wrap: wrap;}
+.InlineBlock{display: inline-block;}
 .col{width: auto;}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
