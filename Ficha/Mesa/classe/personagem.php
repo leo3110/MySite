@@ -32,20 +32,20 @@ class Personagem extends Armas{
         $this->setNome($_SESSION['personagem']);
         $bancoR = fopen('DB/'.$_SESSION['personagem'].'.json','r') or die('erro ao consultar personagem');
         $json = fread($bancoR,filesize('DB/'.$_SESSION['personagem'].'.json'));
-        $json = json_decode($json);
-        $this->setNome($json->Nome);
-        $this->setNivel($json->Nivel);
-        $this->setRaca($json->Raca);
-        $this->setVigor($json->Vigor);
-        $this->setForca($json->Forca);
-        $this->setDestr($json->Destr);
-        $this->setAgili($json->Agili);
-        $this->setResis($json->Resis);
-        $this->setIntel($json->Intel);
-        $this->setConhe($json->Conhe);
-        $this->setInven($json->Inven);
-        $this->setArmas($this->returnArmas());
-        $this->setEquip($json->Equip);
+        $json = json_decode($json,true);
+        $this->setNome($json['Nome']);
+        $this->setNivel($json['Nivel']);
+        $this->setRaca($json['Raca']);
+        $this->setVigor($json['Vigor']);
+        $this->setForca($json['Forca']);
+        $this->setDestr($json['Destr']);
+        $this->setAgili($json['Agili']);
+        $this->setResis($json['Resis']);
+        $this->setIntel($json['Intel']);
+        $this->setConhe($json['Conhe']);
+        $this->setInven($json['Inven']);
+        $this->setArmas($json['Armas']);
+        $this->setEquip($json['Equip']);
 
     }
     // function printObj(){
@@ -72,8 +72,14 @@ class Personagem extends Armas{
     }
     function printArmas(){
         echo "<h3>";
-        foreach ($this->getArmas() as $key => $value) {
-            echo "$key $value";
+        foreach ($this->returnArmas($this->getArmas()) as $key => $value) {
+            echo "$key{<br>";
+            foreach ($value as $kkey => $vvalue) {
+                if ($kkey == 0) echo "Descrição: $vvalue<br>";
+                if ($kkey == 1) echo "Passiva: $vvalue<br>";
+                if ($kkey == 2) echo "Atrib: $vvalue<br>";
+            }
+            echo"<br>}<br>";
         }
         echo "</h3>";
     }
