@@ -1,5 +1,5 @@
 <?php
-if (isset($_GET['char'])) {
+if (isset($_GET['char'])&&$_GET['char']!='') {
     $_SESSION['personagem'] = $_GET['char'];
     $class = new Personagem();
 }

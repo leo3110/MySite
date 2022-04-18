@@ -11,5 +11,6 @@
     "Conhe":99,
     "Inven":"abc",
     "Armas":{"1":"espada grama","2":"espada demonio"},
+    "Habil":["1","2"],
     "Equip":{"1":"Mochilinha verde","2":"Braço mecânico","3":"Daddy ishues","4":"Cachorro amarelo"}
 }

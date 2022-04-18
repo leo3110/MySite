@@ -1,7 +1,7 @@
 <?php
 include 'armas.php';
-class Personagem extends Armas{
-    private $Nome,$Nivel,$Raca,$Vigor,$Forca,$Destr,$Agili,$Resis,$Intel,$Conhe,$Inven,$Armas,$Equip;
+class Personagem{
+    private $Nome,$Nivel,$Raca,$Vigor,$Forca,$Destr,$Agili,$Resis,$Intel,$Conhe,$Inven,$Armas,$Habil,$Equip;
     public function getNome(){return $this->Nome;}
     public function setNome($Nome){$this->Nome = $Nome;}
     public function getNivel(){return $this->Nivel;}
@@ -26,6 +26,8 @@ class Personagem extends Armas{
     public function setInven($Inven){$this->Inven = $Inven;}
     public function getArmas(){return $this->Armas;}
     public function setArmas($Armas){$this->Armas = $Armas;}
+    public function getHabil(){return $this->Habil;}
+    public function setHabil($Habil){$this->Habil = $Habil;}
     public function getEquip(){return $this->Equip;}
     public function setEquip($Equip){$this->Equip = $Equip;}
     function __construct(){
@@ -45,8 +47,8 @@ class Personagem extends Armas{
         $this->setConhe($json['Conhe']);
         $this->setInven($json['Inven']);
         $this->setArmas($json['Armas']);
+        $this->setHabil($json['Habil']);
         $this->setEquip($json['Equip']);
-
     }
     // function printObj(){
     //     $json = json_encode(array('Nome'=>$this->Nome,'Nivel'=>$this->Nivel,'Raca'=>$this->Raca,'Vigor'=>$this->Vigor,'Forca'=>$this->Forca,'Destr'=>$this->Destr,'Agili'=>$this->Agili,'Resis'=>$this->Resis,'Intel'=>$this->Intel,
@@ -72,13 +74,11 @@ class Personagem extends Armas{
     }
     function printArmas(){
         echo "<h3>";
-        foreach ($this->returnArmas($this->getArmas()) as $key => $value) {
+        foreach (Armas::returnArmas($this->getArmas()) as $key => $value) {
 			echo "<div class='Arma Flex JCSB'>";
             echo "<div ";
             foreach ($value as $kkey => $vvalue) {
-                if ($kkey == 0) echo "Tooltip1='Descrição: $vvalue'";
-                if ($kkey == 1) echo "Tooltip2='Passiva: $vvalue'";
-                if ($kkey == 2) echo "Tooltip3='Atrib: $vvalue'";
+                echo "$kkey='$vvalue' ";
             }
 			echo ">$key</div>";
 			echo "</div>";
