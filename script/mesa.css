@@ -7,8 +7,8 @@
 }
 .Atrib{
     font-size: 1.5rem;
-    border-right: 3px gray solid;
-    border-left: 3px gray solid;
+    border-right: 3px var(--Cinza) solid;
+    border-left: 3px var(--Cinza) solid;
     border-radius: 1em;
     padding: 1em;
 }
@@ -16,21 +16,62 @@
     gap:1em;
 }
 .Left div{
-    border-right: 0.1em gray solid;
+    border-right: 0.1em var(--Cinza) solid;
     padding-right: 1em;
     margin-right: 1em;
 }
 .Info{
-    border-right: 3px gray solid;
-    border-left: 3px gray solid;
+    border-right: 3px var(--Cinza) solid;
+    border-left: 3px var(--Cinza) solid;
     border-radius: 1em;
 }
 .Arma{
-    border-top: .1em gray solid;
-    border-bottom: .1em gray solid;
+    border-top: .1em var(--Cinza) solid;
+    border-bottom: .1em var(--Cinza) solid;
     border-radius: 5px;
     width: 100%;
 	margin-top: .1em;
 	margin-bottom: .1em;
     padding: .3em;
+}
+.Bottom{
+    height: 100%;
+}
+.OutHabilidade{
+    height: 100%;
+    width: 50%;
+    padding: .5em;
+    border-right: 3px var(--Cinza) solid;
+}
+.Habilidade{
+    height: min-content;
+    display: inline-block;
+    margin: .5em;
+    padding: .2em;
+    text-align: center;
+    border: .1em var(--Cinza) solid;
+    border-radius: 5px;
+}
+.OutEquipamento{
+    height: 100%;
+    width: 50%;
+    padding: .5em;
+    border-left: 3px var(--Cinza) solid;
+}
+.Equipamento{
+    height: min-content;
+    display: inline-block;
+    margin: .5em;
+    padding: .2em;
+    text-align: center;
+    border-radius: 5px;
+    border: var(--Vermelho) solid 3px;
+    border-radius: 10%;
+}
+.Top{
+    width: auto;
+}
+.Botao{
+    width: 40%;
+    background: var(--Cinza);
 }

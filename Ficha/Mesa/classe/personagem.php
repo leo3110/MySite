@@ -1,5 +1,4 @@
 <?php
-include 'armas.php';
 class Personagem{
     private $Nome,$Nivel,$Raca,$Vigor,$Forca,$Destr,$Agili,$Resis,$Intel,$Conhe,$Inven,$Armas,$Habil,$Equip;
     public function getNome(){return $this->Nome;}
@@ -31,7 +30,6 @@ class Personagem{
     public function getEquip(){return $this->Equip;}
     public function setEquip($Equip){$this->Equip = $Equip;}
     function __construct(){
-        $this->setNome($_SESSION['personagem']);
         $bancoR = fopen('DB/'.$_SESSION['personagem'].'.json','r') or die('erro ao consultar personagem');
         $json = fread($bancoR,filesize('DB/'.$_SESSION['personagem'].'.json'));
         $json = json_decode($json,true);
@@ -50,13 +48,6 @@ class Personagem{
         $this->setHabil($json['Habil']);
         $this->setEquip($json['Equip']);
     }
-    // function printObj(){
-    //     $json = json_encode(array('Nome'=>$this->Nome,'Nivel'=>$this->Nivel,'Raca'=>$this->Raca,'Vigor'=>$this->Vigor,'Forca'=>$this->Forca,'Destr'=>$this->Destr,'Agili'=>$this->Agili,'Resis'=>$this->Resis,'Intel'=>$this->Intel,
-    //     'Conhe'=>$this->Conhe,'Inven'=>$this->Inven));
-    //     $bancoE = fopen('DB/'.$_GET['char'].'.json','w') or die('erro ao salvar personagem');
-    //     fwrite($bancoE,$json);
-    //     fclose($bancoE);
-    // }
     function printAtrib(){
         echo "<div>".$this->getVigor()."</div>";
         echo "<div>".$this->getForca()."</div>";
@@ -73,16 +64,29 @@ class Personagem{
         echo "</h1>";
     }
     function printArmas(){
+        include_once 'armas.php';
         echo "<h3>";
         foreach (Armas::returnArmas($this->getArmas()) as $key => $value) {
-			echo "<div class='Arma Flex JCSB'>";
+            echo "<div class='Arma Flex JCSB'>";
             echo "<div ";
             foreach ($value as $kkey => $vvalue) {
                 echo "$kkey='$vvalue' ";
             }
-			echo ">$key</div>";
-			echo "</div>";
+            echo ">".$value['nome']."</div>";
+            echo "</div>";
         }
         echo "</h3>";
+    }
+    function printHabilidades(){
+        include_once 'habilidades.php';
+        foreach (Habilidades::returnHabil($this->getHabil()) as $key => $value) {
+            echo "<div class='Habilidade'>";
+            echo "<span ";
+            foreach ($value as $kkey => $vvalue) {
+                echo "$kkey='$vvalue' ";
+            }
+            echo ">".$value['nome']."</span>";
+            echo "</div>";
+        }
     }
 }

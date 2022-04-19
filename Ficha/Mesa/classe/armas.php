@@ -1,5 +1,5 @@
 <?php
-  class Armas {
+class Armas {
     public static function returnArmas($a){
         $bancoR = fopen('DB/Armas.json','r') or die('erro ao abrir armas');
         $bancoR = fread($bancoR,filesize('DB/Armas.json'));
@@ -12,4 +12,4 @@
         }
         return $armas;
     }
-  }
+}

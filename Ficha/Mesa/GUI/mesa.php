@@ -8,7 +8,7 @@ if (isset($_GET['char'])&&$_GET['char']!='') {
     <div class="OutQuadro FullWidth FullHeight Flex Col JCSA">
         <div class="Quadro Flex JCSB">
             <div class="Atrib Flex">
-                <div class="Left Flex Col">
+                <div class="Left Flex Col JCSB">
                     <!-- <div><i class=""></i>Vida: <span id="vidaT">20</span></div>
                     <div><i class=""></i>Mana: <span id="manaT">20</span></div> -->
                     <div><i class=""></i>Vigor: <span id="vigor"></span></div>
@@ -19,18 +19,43 @@ if (isset($_GET['char'])&&$_GET['char']!='') {
                     <div><i class=""></i>Inteligência: <span id="intel"></span></div>
                     <div><i class=""></i>Conhecimento: <span id="conhe"></span></div>
                 </div>
-                <div class="Right Flex Col"><?php $class->printAtrib(); ?></div>
+                <div class="Right Flex Col JCSB"><?php $class->printAtrib(); ?></div>
             </div>
             <div class="Info Flex Col col-9">
-                <div class="Top Flex">
+                <div class="Flex">
                     <div class="LeftInfo Flex col-3">
-                        <?php echo $class->printName(); ?>
+                        <?php  $class->printName(); ?>
                     </div>
                     <div class="RightInfo Flex Col JCSA col-8">
-	                    <?php echo $class->printArmas(); ?>
+	                    <?php  $class->printArmas(); ?>
                     </div>
                 </div>
-                <div class="Bottom">
+                <div class="Bottom Flex">
+                    <div class="OutHabilidade Flex Wrap">
+                        <?php  $class->printHabilidades(); ?>
+                    </div>
+                    <div class="OutEquipamento Flex">
+                        <div class="Equipamento Flex Col">
+                            <div class="Flex Centro">
+                                <h1>Mão</h1>
+                            </div>
+                            <div class="Flex JCSA Wrap">
+                                <div class="Botao">
+                                    1
+                                </div>
+                                <div class="Botao">
+                                    1
+                                </div>
+                                <div class="Botao">
+                                    1
+                                </div>
+                                <div class="Botao">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

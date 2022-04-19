@@ -1,14 +1,15 @@
 :root{
-    --corVermelho: #e03434;
-    --corTexto: #e02424;
-    --corPreto: #222;
-    --corFundo: #e03434;
+    --Vermelho: #e03434;
+    --Preto: #222;
+    --Cinza: #999;
+    --Texto: #e02424;
+    --Fundo: #e03434;
     font-size: 1vw;
     color: white;
 }
 html,body{
     height: 100%;
-    background-color: var(--corPreto);
+    background-color: var(--Preto);
     margin: 0;
     scroll-behavior: smooth;
 }
@@ -23,7 +24,7 @@ body::-webkit-scrollbar{
     display: none;
 }
 a,a:active,a:hover{
-    color: var(--corTexto);
+    color: var(--Texto);
     text-decoration: none;
 }
 *{

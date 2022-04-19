@@ -1,19 +1,19 @@
 {
-    1:{
+    "1":{
         "nome":"Cuspir",
         "rolagem":"1d20+1d6",
         "desc":"Cuspe de longa distância, até 6 metros",
         "atrib":"des",
         "bonus":4
     },
-    2:{
+    "2":{
         "nome":"Rasteira",
         "rolagem":"1d20",
         "desc":"Derruba o inimigo, deixando-o vulnerável",
         "atrib":"for",
         "bonus":2
     },
-    3:{
+    "3":{
         "nome":"Falhar em matemática",
         "rolagem":"1d10",
         "desc":"Finn é burro",
