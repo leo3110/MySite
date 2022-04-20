@@ -44,13 +44,14 @@ a,a:active,a:hover{
 .FullWidth{width: 100vw}
 .FullHeight{min-height: 100vh}
 .Flex{display: flex;}
-.Flex .Wrap{flex-wrap: wrap;}
+.Wrap{flex-wrap: wrap;}
 .Centro, .CentroY{align-items: center;}
 .Centro, .CentroX{justify-content: center;}
 .Col{flex-direction: column;}
 .JCSA{justify-content: space-around;}
 .JCSB{justify-content: space-between;}
 .Wrap{flex-wrap: wrap;}
+.Grid{display: grid;}
 .InlineBlock{display: inline-block;}
 .col{width: auto;}
 .col-1 {width: 8.33%;}

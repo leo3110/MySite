@@ -1,0 +1,14 @@
+{
+    "1":{
+        "nome":"Amuleto",
+        "bonus":{"agi":4,"res":6},
+        "pas":"adsamjdklasjdlkas",
+        "desc":"Protege contra alguma coisa aí"
+    },
+    "2":{
+        "nome":"Isqueiro",
+        "bonus":{"for":4},
+        "pas":"passiva",
+        "desc":"Fogo, né, crl?"
+    }
+}

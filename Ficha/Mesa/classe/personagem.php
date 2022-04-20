@@ -31,22 +31,22 @@ class Personagem{
     public function setEquip($Equip){$this->Equip = $Equip;}
     function __construct(){
         $bancoR = fopen('DB/'.$_SESSION['personagem'].'.json','r') or die('erro ao consultar personagem');
-        $json = fread($bancoR,filesize('DB/'.$_SESSION['personagem'].'.json'));
-        $json = json_decode($json,true);
-        $this->setNome($json['Nome']);
-        $this->setNivel($json['Nivel']);
-        $this->setRaca($json['Raca']);
-        $this->setVigor($json['Vigor']);
-        $this->setForca($json['Forca']);
-        $this->setDestr($json['Destr']);
-        $this->setAgili($json['Agili']);
-        $this->setResis($json['Resis']);
-        $this->setIntel($json['Intel']);
-        $this->setConhe($json['Conhe']);
-        $this->setInven($json['Inven']);
-        $this->setArmas($json['Armas']);
-        $this->setHabil($json['Habil']);
-        $this->setEquip($json['Equip']);
+        $bancoR = fread($bancoR,filesize('DB/'.$_SESSION['personagem'].'.json'));
+        $bancoR = json_decode($bancoR,true);
+        $this->setNome($bancoR['Nome']);
+        $this->setNivel($bancoR['Nivel']);
+        $this->setRaca($bancoR['Raca']);
+        $this->setVigor($bancoR['Vigor']);
+        $this->setForca($bancoR['Forca']);
+        $this->setDestr($bancoR['Destr']);
+        $this->setAgili($bancoR['Agili']);
+        $this->setResis($bancoR['Resis']);
+        $this->setIntel($bancoR['Intel']);
+        $this->setConhe($bancoR['Conhe']);
+        $this->setInven($bancoR['Inven']);
+        $this->setArmas($bancoR['Armas']);
+        $this->setHabil($bancoR['Habil']);
+        $this->setEquip($bancoR['Equip']);
     }
     function printAtrib(){
         echo "<div>".$this->getVigor()."</div>";
@@ -77,7 +77,7 @@ class Personagem{
         }
         echo "</h3>";
     }
-    function printHabilidades(){
+    function printHabil(){
         include_once 'habilidades.php';
         foreach (Habilidades::returnHabil($this->getHabil()) as $key => $value) {
             echo "<div class='Habilidade'>";
@@ -88,5 +88,18 @@ class Personagem{
             echo ">".$value['nome']."</span>";
             echo "</div>";
         }
+    }
+    function printEquip(){
+        include_once 'equipamentos.php';
+        echo Equipamento::returnEquip($this->getEquip());
+        // foreach (Equipamento::returnEquip($this->getEquip()) as $key => $value) {
+        //     echo "<div class='Habilidade'>";
+        //     echo "<span ";
+        //     foreach ($value as $kkey => $vvalue) {
+        //         echo "$kkey='$vvalue' ";
+        //     }
+        //     echo ">".$value['nome']."</span>";
+        //     echo "</div>";
+        // }
     }
 }

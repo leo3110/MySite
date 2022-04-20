@@ -32,29 +32,10 @@ if (isset($_GET['char'])&&$_GET['char']!='') {
                 </div>
                 <div class="Bottom Flex">
                     <div class="OutHabilidade Flex Wrap">
-                        <?php  $class->printHabilidades(); ?>
+                        <?php  $class->printHabil(); ?>
                     </div>
                     <div class="OutEquipamento Flex">
-                        <div class="Equipamento Flex Col">
-                            <div class="Flex Centro">
-                                <h1>Mão</h1>
-                            </div>
-                            <div class="Flex JCSA Wrap">
-                                <div class="Botao">
-                                    1
-                                </div>
-                                <div class="Botao">
-                                    1
-                                </div>
-                                <div class="Botao">
-                                    1
-                                </div>
-                                <div class="Botao">
-                                    1
-                                </div>
-                            </div>
-                        </div>
-
+                        <?php  $class->printEquip(); ?>
                     </div>
                 </div>
             </div>

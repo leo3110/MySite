@@ -1,3 +1,4 @@
+h1{margin: 0}
 .OutQuadro{
 
 }
@@ -59,19 +60,22 @@
     border-left: 3px var(--Cinza) solid;
 }
 .Equipamento{
-    height: min-content;
+    height: 40%;
+    aspect-ratio:1;
     display: inline-block;
     margin: .5em;
     padding: .2em;
     text-align: center;
-    border-radius: 5px;
     border: var(--Vermelho) solid 3px;
-    border-radius: 10%;
 }
 .Top{
     width: auto;
 }
 .Botao{
-    width: 40%;
+    gap: .5em;
+}
+.BotaoItem{
+    
+    aspect-ratio:1;
     background: var(--Cinza);
 }

@@ -12,5 +12,5 @@
     "Inven":"abc",
     "Armas":["1","2"],
     "Habil":["1","2","3"],
-    "Equip":{"1":"Mochilinha verde","2":"Braço mecânico","3":"Daddy ishues","4":"Cachorro amarelo"}
+    "Equip":["1","2"]
 }
