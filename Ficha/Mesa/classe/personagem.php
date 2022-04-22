@@ -92,12 +92,14 @@ class Personagem{
     function printEquip(){
         include_once 'equipamentos.php';
         foreach (Equipamento::returnEquip($this->getEquip()) as $key => $value) {
-            echo "<div class='Equipamento'";
+            echo "<div class='Equipamento Flex Col'";
             foreach ($value['bonus'] as $chave => $valor) {
-                echo "$chave='$valor' ";
+                echo "$chave='$valor'";
             }
             echo "pas='".$value['pas']."' desc='".$value['desc']."'>";
             echo "<span>".$value['nome']."</span>";
+            echo "<div class='Botao'";
+            echo "</div>";
             echo "</div>";
         }
     }

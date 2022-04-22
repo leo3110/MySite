@@ -62,13 +62,12 @@ h1{margin: 0}
     border-left: 3px var(--Cinza) solid;
 }
 .Equipamento{
-    align-self: center;
     height: 90%;
     aspect-ratio:1;
     display: inline-block;
     margin: auto;
     text-align: center;
-    border: var(--Vermelho) solid 3px;
+    border: var(--Cinza) solid 3px;
 }
 .Top{
     width: auto;
