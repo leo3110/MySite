@@ -91,15 +91,14 @@ class Personagem{
     }
     function printEquip(){
         include_once 'equipamentos.php';
-        echo Equipamento::returnEquip($this->getEquip());
-        // foreach (Equipamento::returnEquip($this->getEquip()) as $key => $value) {
-        //     echo "<div class='Habilidade'>";
-        //     echo "<span ";
-        //     foreach ($value as $kkey => $vvalue) {
-        //         echo "$kkey='$vvalue' ";
-        //     }
-        //     echo ">".$value['nome']."</span>";
-        //     echo "</div>";
-        // }
+        foreach (Equipamento::returnEquip($this->getEquip()) as $key => $value) {
+            echo "<div class='Equipamento'";
+            foreach ($value['bonus'] as $chave => $valor) {
+                echo "$chave='$valor' ";
+            }
+            echo "pas='".$value['pas']."' desc='".$value['desc']."'>";
+            echo "<span>".$value['nome']."</span>";
+            echo "</div>";
+        }
     }
 }

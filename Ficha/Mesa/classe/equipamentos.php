@@ -5,13 +5,11 @@ class Equipamento{
         $bancoR = fread($bancoR,filesize('DB/Equipamentos.json'));
         $bancoR = json_decode($bancoR,true);
         foreach ($a as $original => $valoriginal) {
-            $equipamentos["$valoriginal"] = "asd";
-            // foreach ($bancoR as $equipamento => $arrayatrib) {
-            //     if (array_key_exists($equipamento,$equipamentos)) $equipamentos["$equipamento"]=$arrayatrib;
-            // }
+            $equis["$valoriginal"] = "asd";
+            foreach ($bancoR as $equi => $arrayatrib) {
+                if (array_key_exists($equi,$equis)) $equis["$equi"]=$arrayatrib;
+            }
         }
-        print_r($bancoR);
-        // return $equipamentos;
-        // return $bancoR;
+        return $equis;
     }
 }

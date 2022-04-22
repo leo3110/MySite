@@ -34,7 +34,9 @@ if (isset($_GET['char'])&&$_GET['char']!='') {
                     <div class="OutHabilidade Flex Wrap">
                         <?php  $class->printHabil(); ?>
                     </div>
-                    <div class="OutEquipamento Flex">
+                    <div class="OutEquipamento">
+                        <?php  $class->printEquip(); ?>
+                        <?php  $class->printEquip(); ?>
                         <?php  $class->printEquip(); ?>
                     </div>
                 </div>
