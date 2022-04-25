@@ -8,7 +8,6 @@
     width: 100%;
     background-image: url("../tk/img/wpp");
     background-size: cover;
-    height:100%;
     display: flex;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
@@ -52,4 +51,15 @@ img{
     width: 3rem;
     background: #0006;
     white-space: nowrap;
+}
+.Lenda{
+    font-size: 90%;
+    margin: auto;
+    width: 33%;
+    border: 1px solid var(--Cinza);
+}
+.InfoLendaItem{
+    margin: auto;
+    width: 29%;
+    height: 1em;
 }

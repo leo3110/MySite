@@ -1,20 +1,22 @@
-<script type="text/javascript">
-$(function(){
-    <?php TKBusca(); ?>
-    $(".Button").click(function(){
-        var btn = $(this).attr("alvo");
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            document.getElementById(btn).innerHTML = this.responseText;
-        };
-        var a = $(this).attr("alvo");
-        var b = $(this).attr("objetivo");
-        xmlhttp.open("get","script/ajax.php?a="+a+"&&b="+b, true);
-        xmlhttp.send();
-    })
-});
+<main>
+    <a href="#Teste"><button type="button" name="button">Teste</button></a>
+    <script type="text/javascript">
+    $(function(){
+        <?php TKBusca(); ?>
+        $(".Button").click(function(){
+            var btn = $(this).attr("alvo");
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                document.getElementById(btn).innerHTML = this.responseText;
+            };
+            var a = $(this).attr("alvo");
+            var b = $(this).attr("objetivo");
+            xmlhttp.open("get","script/ajax.php?a="+a+"&&b="+b, true);
+            xmlhttp.send();
+        })
+    });
 </script>
-<div class="TK">
+<div class="TK FullWidth FullHeight">
     <div class="Player">
         <h6 class="Titulo">Leo</h6>
         <div class="IMG">
@@ -46,3 +48,7 @@ $(function(){
         </div>
     </div>
 </div>
+<div id="Teste" class="Teste FullWidth FullHeight Flex Wrap">
+    <?php include 'script/api.php'; ?>
+</div>
+</main>
