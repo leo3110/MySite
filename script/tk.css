@@ -54,12 +54,16 @@ img{
 }
 .Lenda{
     font-size: 90%;
-    margin: auto;
-    width: 33%;
-    border: 1px solid var(--Cinza);
+    margin: 1em auto;
+    width: 32%;
+    border: .1em solid var(--Cinza);
+    min-height: min-content;
+    wrap: nowrap;
 }
 .InfoLendaItem{
     margin: auto;
-    width: 29%;
-    height: 1em;
+    width: 30%;
+    height: 2em;
+    border: solid .1em var(--Cinza);
+    border-radius: .3em;
 }
