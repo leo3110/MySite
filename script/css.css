@@ -44,7 +44,7 @@ a,a:active,a:hover{
     background-color: #e03434;
     color: #000;
 }
-.FullWidth{width: 100vw}
+.FullWidth{width: 100%}
 .FullHeight{min-height: 100vh}
 .Flex{display: flex;}
 .Wrap{flex-wrap: wrap;}

@@ -26,7 +26,7 @@ if (isset($_GET['char'])&&$_GET['char']!='') {
                     <div class="LeftInfo Flex col-3">
                         <?php  $class->printName(); ?>
                     </div>
-                    <div class="RightInfo Flex Col JCSA col-8">
+                    <div class="RightInfo Flex Col col-8">
 	                    <?php  $class->printArmas(); ?>
                     </div>
                 </div>
