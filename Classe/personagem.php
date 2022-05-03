@@ -30,8 +30,8 @@ class Personagem{
     public function getEquip(){return $this->Equip;}
     public function setEquip($Equip){$this->Equip = $Equip;}
     function __construct(){
-        $bancoR = fopen('../db/'.$_SESSION['personagem'].'.json','r') or die('erro ao consultar personagem');
-        $bancoR = fread($bancoR,filesize('../db/'.$_SESSION['personagem'].'.json'));
+        $bancoR = fopen('../../db/'.$_SESSION['personagem'].'.json','r') or die('erro ao consultar personagem');
+        $bancoR = fread($bancoR,filesize('../../db/'.$_SESSION['personagem'].'.json'));
         $bancoR = json_decode($bancoR,true);
         $this->setNome($bancoR['Nome']);
         $this->setNivel($bancoR['Nivel']);

@@ -9,6 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 if (isset($_SESSION['op'])) {
     include '../GUI/header.php';
+    include '../script/function.php';
     include '../GUI/'.$_SESSION['op'].'.php';
 }
 else {
