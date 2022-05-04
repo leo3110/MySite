@@ -8,9 +8,9 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <script src="https://kit.fontawesome.com/f990165b2c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="/Script/css.css">
-    <link rel="stylesheet" type="text/css" href="/Script/<?php echo $_SESSION['op'];?>.css">
-    <link rel="stylesheet" type="text/css" href="/Script/<?php echo $_SESSION['op'];?>Anim.css">
+    <link rel="stylesheet" type="text/css" href="/Style/css.css">
+    <link rel="stylesheet" type="text/css" href="/Style/<?php echo $_SESSION['op'];?>.css">
+    <link rel="stylesheet" type="text/css" href="/Style/<?php echo $_SESSION['op'];?>Anim.css">
     <link rel="shortcut icon" href="img/d20.png">
     <title>DE Souza</title>
 </head>

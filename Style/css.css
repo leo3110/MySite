@@ -2,10 +2,12 @@
     --Vermelho: #e03434;
     --Preto: #222;
     --Cinza: #999;
+    --Cinzaclaro: #777;
     --Texto: #e02424;
     --Fundo: #e03434;
     font-size: 1vw;
     color: white;
+    --Centro: calc(100vw - attr(width) / 2);
 }
 html,body{
     height: 100%;
@@ -35,8 +37,10 @@ a,a:active,a:hover{
     padding: 0;
 }
 .Footer{
+    position: fixed;
     display: block;
     min-height: 5vh;
+    bottom: 0;
     width: 100%;
     margin: 0;
     padding: 0;

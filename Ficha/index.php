@@ -7,12 +7,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['op'] = 'select';
     }
 }
-if (isset($_SESSION['op'])) {
-    include '../GUI/header.php';
-    include '../script/function.php';
+include '../GUI/header.php';
+if (isset($_GET['q'])&&$_GET['q']='novo') {
+    include '../GUI/new.php';
+}
+elseif (isset($_SESSION['op'])) {
+    // validate vem aqui
     include '../GUI/'.$_SESSION['op'].'.php';
 }
 else {
     echo "erro";
 }
-include '../GUI/footer.php';

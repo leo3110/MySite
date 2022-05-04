@@ -2,5 +2,4 @@
 $_SESSION['op']='mesa';
 include '../../classe/personagem.php';
 include '../../GUI/header.php';
-include '../../GUI/mesa.php';
-include '../../GUI/footer.php';
+include '../../GUI/'.$_SESSION['op'].'.php';

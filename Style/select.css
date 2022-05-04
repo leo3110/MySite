@@ -8,4 +8,14 @@
     aspect-ratio:1;
     border: solid 3px var(--Vermelho);
     border-radius: 16px;
+    margin: 1em;
+}
+.BtnCriar{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    border-radius: 50%;
+    background: var(--Vermelho);
+    width: 5em;
+    aspect-ratio:1;
 }

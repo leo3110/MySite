@@ -5,7 +5,14 @@
                 <?php if (isset($_SESSION['Login'])&&$_SESSION['Login']=='erro') echo "<h6>ERRO AO LOGAR! TENTE NOVAMENTE</h6> "; ?>
                 <div class='Input'><label for="Id"><i class="fa-solid fa-user"> :</i></label> <input type="text" name="Id" id="Id"></div>
                 <div class='Input'><label for="Pass"><i class="fa-solid fa-key">:</i></label> <input type="password" name="Pass" id="Pass"></div>
-                <button type="submit" name="Entrar" class="Botao" id="Entrar">Entrar-></button>
+                <div class="OutBotao Flex">
+                    <button type="submit" name="Entrar" class="Botao" id="Entrar">Entrar-></button>
+                </div>
+                <div class="OutBotao Flex">
+                    <a href="?q=novo">
+                        <button type="button" name="Criar" class="Botao" id="Criar">Sou novo-></button>
+                    </a>
+                </div>
             </form>
         </div>
     </div>
