@@ -8,11 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 include '../GUI/header.php';
-if (isset($_GET['q'])&&$_GET['q']='novo') {
-    include '../GUI/new.php';
-}
-elseif (isset($_SESSION['op'])) {
-    // validate vem aqui
+if (isset($_SESSION['op'])) {
     include '../GUI/'.$_SESSION['op'].'.php';
 }
 else {

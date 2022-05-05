@@ -9,7 +9,7 @@
                     <button type="submit" name="Entrar" class="Botao" id="Entrar">Entrar-></button>
                 </div>
                 <div class="OutBotao Flex">
-                    <a href="?q=novo">
+                    <a href="User">
                         <button type="button" name="Criar" class="Botao" id="Criar">Sou novo-></button>
                     </a>
                 </div>

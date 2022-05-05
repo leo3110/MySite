@@ -28,12 +28,6 @@ input, input:focus-visible,button{
     right: 3em;
     margin: 1% 0;
 }
-.New{
-    height: 30vh;
-    width: 30vh;
-    top: 40vh;
-    left: calc(attr(width) - 100vw);
-}
 input{
     height: 1rem;
     width: 80%;
