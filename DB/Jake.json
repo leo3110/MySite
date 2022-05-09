@@ -1,0 +1,16 @@
+{
+    "Nome":"Jake",
+    "Nivel":30,
+    "Raca":"Cão foda",
+    "Vigor":30,
+    "Forca":30,
+    "Destr":30,
+    "Agili":30,
+    "Resis":30,
+    "Intel":30,
+    "Conhe":30,
+    "Inven":"nada",
+    "Armas":[],
+    "Habil":["3"],
+    "Equip":[]
+}
