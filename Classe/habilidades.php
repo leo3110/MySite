@@ -5,7 +5,7 @@ class Habilidades {
         $bancoR = fread($bancoR,filesize('../../db/Habilidades.json'));
         $bancoR = json_decode($bancoR,true);
         foreach ($a as $original => $valoriginal) {
-            $habilidades["$valoriginal"] = "asd";
+            $habilidades["$valoriginal"] = "";
             foreach ($bancoR as $habilidade => $arrayatrib) {
                 if (array_key_exists($habilidade,$habilidades)) $habilidades["$habilidade"]=$arrayatrib;
             }

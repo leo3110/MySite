@@ -1,4 +1,11 @@
 {
+    "0":{
+        "nome":"Nenhuma",
+        "rolagem":"",
+        "desc":"",
+        "atrib":"",
+        "bonus":0
+    },
     "1":{
         "nome":"Cuspir",
         "rolagem":"1d20+1d6",

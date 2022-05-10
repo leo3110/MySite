@@ -20,6 +20,7 @@ class Usuario {
         $c = trim($c);
         $c = stripslashes($c);
         $c = htmlspecialchars($c);
+        $c = strtolower($c);
         return $c;
     }
     function listaPers(){

@@ -29,7 +29,6 @@ input, input:focus-visible,button{
     margin: 1% 0;
 }
 input{
-    background: var(--Vermelho);
     margin: .3em;
     height: 1rem;
     width: 80%;

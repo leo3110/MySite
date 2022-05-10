@@ -10,7 +10,7 @@
     "Intel":30,
     "Conhe":30,
     "Inven":"nada",
-    "Armas":[],
-    "Habil":["3"],
-    "Equip":[]
+    "Armas":["0"],
+    "Habil":["0"],
+    "Equip":["0"]
 }

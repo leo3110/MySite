@@ -5,7 +5,7 @@ class Armas {
         $bancoR = fread($bancoR,filesize('../../db/Armas.json'));
         $bancoR = json_decode($bancoR,true);
         foreach ($a as $original => $valoriginal) {
-            $armas["$valoriginal"] = "asd";
+            $armas["$valoriginal"] = "";
             foreach ($bancoR as $arma => $arrayatrib) {
                 if (array_key_exists($arma,$armas)) $armas["$arma"]=$arrayatrib;
             }

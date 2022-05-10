@@ -1,4 +1,9 @@
 {
+    "0":{
+        "nome":"Desarmado",
+        "pas":"",
+        "desc":"''Mãos Nuas''"
+    },
     "1":{
         "nome":"espada grama",
         "pas":"não pode ser removida",

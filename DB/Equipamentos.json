@@ -1,4 +1,10 @@
 {
+    "0":{
+        "nome":"Vazio",
+        "bonus":{},
+        "pas":"Nenhuma",
+        "desc":"Pode equipar outro acessório"
+    },
     "1":{
         "nome":"Amuleto",
         "bonus":{"agi":4,"res":6},
@@ -16,11 +22,5 @@
         "bonus":{"for":10},
         "pas":"3x dano",
         "desc":"Explosivo fora da validade. mais destrutivo que quando novo."
-    },
-    "4":{
-        "nome":"Jake",
-        "bonus":{"for":4},
-        "pas":"passiva",
-        "desc":"Fogo, né, crl?"
     }
 }

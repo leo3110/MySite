@@ -36,8 +36,6 @@ if (isset($_GET['char'])&&$_GET['char']!='') {
                     </div>
                     <div class="OutEquipamento">
                         <?php  $class->printEquip(); ?>
-                        <?php  $class->printEquip(); ?>
-                        <?php  $class->printEquip(); ?>
                     </div>
                 </div>
             </div>

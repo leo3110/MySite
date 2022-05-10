@@ -91,6 +91,7 @@ class Personagem{
     }
     function printEquip(){
         include_once 'equipamentos.php';
+        $equips = 6;
         foreach (Equipamento::returnEquip($this->getEquip()) as $key => $value) {
             echo "<div class='Equipamento Flex Col'";
             foreach ($value['bonus'] as $chave => $valor) {
@@ -101,6 +102,15 @@ class Personagem{
             echo "<div class='Botao'>";
             echo "</div>";
             echo "</div>";
+            $equips--;
+        }
+        while ($equips) {
+            echo "<div class='Equipamento Flex Col'>
+                    <span>Vazio</span>
+                    <div class='Botao'>
+                    </div>
+                </div>";
+            $equips--;
         }
     }
 }
