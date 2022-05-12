@@ -65,7 +65,6 @@ class Personagem{
     }
     function printArmas(){
         include_once 'armas.php';
-        echo "<h3>";
         foreach (Armas::returnArmas($this->getArmas()) as $key => $value) {
             echo "<div class='Arma Flex JCSB'>";
             echo "<div ";
@@ -75,7 +74,6 @@ class Personagem{
             echo ">".$value['nome']."</div>";
             echo "</div>";
         }
-        echo "</h3>";
     }
     function printHabil(){
         include_once 'habilidades.php';
