@@ -4,8 +4,14 @@
             <div class="Arrow"></div>
         </div>
     </a>
-    <div class="Welcome Flex CentroX CentroY">
-        Bem Vindo!
+    <div class="Welcome Flex CentroY">
+        <div class="Nome Flex Col JCSB">
+            <h1>Leonardo</h1>
+            <h1>I</h1>
+            <h1>Nunes</h1>
+            <h1>U</h1>
+            <h1>Souza</h1>
+        </div>
     </div>
     <div id="Sistemas" class="OutGrid">
         <div class="Grid">

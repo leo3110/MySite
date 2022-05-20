@@ -1,5 +1,13 @@
+h1{
+    font-size: 500%;
+    text-shadow: .03em .03em .03em var(--c3);
+}
 .Welcome{
-    height: 100vh;
+    height: 80vh;
+    background-color: var(--c1);
+    color: var(--c2);
+    font-family: Crimson Text;
+    padding: 0 10em;
 }
 .LeftMenu{
     position: absolute;
