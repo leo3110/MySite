@@ -1,13 +1,24 @@
 h1{
-    font-size: 500%;
     text-shadow: .03em .03em .03em var(--c3);
+    font-family: 'Major Mono Display', monospace;
+    font-size: 6em;
 }
 .Welcome{
     height: 80vh;
     background-color: var(--c1);
     color: var(--c2);
-    font-family: Crimson Text;
     padding: 0 10em;
+}
+.Nome{
+    gap: 3em;
+}
+.Nome::before{
+    position: relative;
+    content: "Feito por";
+    top:1em;
+    left:-1em;
+    font-size: 3em;
+    font-family: 'Roboto Slab', serif;
 }
 .LeftMenu{
     position: absolute;
