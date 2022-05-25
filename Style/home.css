@@ -1,7 +1,12 @@
-h1{
+h1,h3{
     text-shadow: .03em .03em .03em var(--c3);
     font-family: 'Major Mono Display', monospace;
-    font-size: 6em;
+}
+h1{
+    font-size: 12em;
+}
+h3{
+    font-size: 5em;
 }
 .Welcome{
     height: 80vh;
@@ -9,16 +14,24 @@ h1{
     color: var(--c2);
     padding: 0 10em;
 }
-.Nome{
+.Criador{
     gap: 3em;
 }
-.Nome::before{
+.Nome{
+    display: none;
+}
+.Criador::before,.Nome::before{
     position: relative;
-    content: "Feito por";
-    top:1em;
     left:-1em;
     font-size: 3em;
     font-family: 'Roboto Slab', serif;
+}
+.Criador::before{
+    top:1em;
+    content: "Feito por";
+}
+.Nome::before{
+    content: "Bem vindo ao";
 }
 .LeftMenu{
     position: absolute;

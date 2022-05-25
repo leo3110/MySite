@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/Style/css.css">
     <link rel="stylesheet" type="text/css" href="/Style/<?php echo $_SESSION['op'];?>.css">
     <link rel="stylesheet" type="text/css" href="/Style/<?php echo $_SESSION['op'];?>Anim.css">
+    <script src="/Script/<?php echo $_SESSION['op'];?>.js"></script>
     <link rel="shortcut icon" href="img/d20.png">
     <link href='https://fonts.googleapis.com/css?family=Crimson Text' rel='stylesheet'>
     <title>DE Souza</title>

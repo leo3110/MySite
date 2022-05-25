@@ -8,10 +8,13 @@
         </div>
     </a>
     <div class="Welcome Flex CentroY">
-        <div class="Nome Flex Col JCSB">
-            <h1>leonardo</h1>
-            <h1>nunes</h1>
-            <h1>souza</h1>
+        <div class="Criador Flex Col JCSB">
+            <h3>leonardo</h3>
+            <h3>nunes</h3>
+            <h3>souza</h3>
+        </div>
+        <div class="Nome">
+            <h1>linus</h1>
         </div>
     </div>
     <div id="Sistemas" class="OutGrid">
