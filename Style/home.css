@@ -1,6 +1,7 @@
 h1,h3{
     text-shadow: .03em .03em .03em var(--c3);
     font-family: 'Major Mono Display', monospace;
+    text-align: justify;
 }
 h1{
     font-size: 12em;
@@ -15,7 +16,7 @@ h3{
     padding: 0 10em;
 }
 .Criador{
-    gap: 3em;
+    gap: 1em;
 }
 .Nome{
     display: none;
@@ -27,7 +28,6 @@ h3{
     font-family: 'Roboto Slab', serif;
 }
 .Criador::before{
-    top:1em;
     content: "Feito por";
 }
 .Nome::before{

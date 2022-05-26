@@ -1,14 +1,14 @@
 $(function() {
-
     function Loop() {
-        $(".Criador").fadeToggle(1000,"swing",function() {
-            .$(".Criador").fadeToggle(1000,"swing",Loop());
+        $(".Criador").fadeOut(1000,"swing",function() {
+            $(".Nome").fadeIn(2500,"swing",function() {
+                $(".Nome").fadeOut(1000,"swing",function() {
+                    $(".Criador").fadeIn(2500,"swing",function() {
+                        Loop();
+                    });
+                });
+            });
         });
     }
-    // function Criador() {
-    //     $(".Nome").fadeOut(1000,"swing",function() {
-    //         $(".Criador").fadeIn(1000,"swing", Nome());
-    //     });
-    // }
     Loop();
 });
