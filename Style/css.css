@@ -42,8 +42,9 @@ a,a:active,a:hover{
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #e03434;
-    color: #000;
+    background-color: var(--c1);
+    color: var(--c2);
+    text-shadow: 0 0 .3em var(--c3);
 }
 .FullWidth{width: 100%}
 .FullHeight{min-height: 100vh}

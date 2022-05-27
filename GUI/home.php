@@ -1,4 +1,7 @@
-<style>
+<?php
+ echo $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+ ?>
+ <style>
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Slab:wght@100&display=swap');
 </style>
 <main>
@@ -17,28 +20,19 @@
             <h1>linus</h1>
         </div>
     </div>
-    <div id="Sistemas" class="OutGrid">
-        <div class="Grid">
-
-            <a class="Frame" href="/TK">
-                <div>
-                    <span>BRAWLHALLA TK</span>
-                </div>
+    <div class="Sistemas" id="Sistemas">
+        <div class="Grade Flex JCSA Wrap">
+            <a class="Frame Flex Centro" href="/TK">
+                <span>TK</span>
             </a>
-            <a class="Frame" href="/Ficha">
-                <div>
-                    <span>Ficha</span>
-                </div>
+            <a class="Frame Flex Centro" href="/Ficha">
+                <span>Ficha</span>
             </a>
-            <a class="Frame" href="/Paleta">
-                <div>
-                    <span>Gerador de Paleta de Cor</span>
-                </div>
+            <a class="Frame Flex Centro" href="/Paleta">
+                <span>Paleta de Cor</span>
             </a>
-            <a class="Frame" href="#">
-                <div>
-                    <span>Sistema 4</span>
-                </div>
+            <a class="Frame Flex Centro" href="#">
+                <span>Sistema 4</span>
             </a>
         </div>
     </div>

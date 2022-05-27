@@ -12,6 +12,10 @@
     border-width: 0 0.1em 0.1em 0;
     transform: rotate(45deg);
 }
+.Frame:hover{
+    background: #fff3;
+    transition: background 0.1s;
+}
 .OutArrow:hover .Arrow{
     animation: rolar 1.5s infinite;
 }

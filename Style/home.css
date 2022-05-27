@@ -1,5 +1,5 @@
 h1,h3{
-    text-shadow: .03em .03em .03em var(--c3);
+    text-shadow: .03em .03em .02em var(--c3);
     font-family: 'Major Mono Display', monospace;
     text-align: justify;
 }
@@ -10,7 +10,7 @@ h3{
     font-size: 5em;
 }
 .Welcome{
-    height: 80vh;
+    height: 95vh;
     background-color: var(--c1);
     color: var(--c2);
     padding: 0 10em;
@@ -33,64 +33,21 @@ h3{
 .Nome::before{
     content: "Bem vindo ao";
 }
-.LeftMenu{
-    position: absolute;
-    min-width: 3vw;
-    aspect-ratio:1;
-    background-color: var(--corVermelho);
-    z-index: 1;
-}
-.LeftMenu:hover{
-    color: white;
-    min-width: 7vw;
-    text-align: justify;
-    justify-content: center;
-}
-.OutGrid{
-    width: 50vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-.Grid{
-    display: grid;
-    grid: 20vw 20vw / 20vw 20vw;
-}
-a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+.Sistemas{
+    min-height: 30vh;
+    min-width: min-content;
+    max-width: 80%;
+    margin: 3em auto;
+    gap: auto;
 }
 .Frame{
+    font-size: 1.5vw;
     margin: auto;
     width: 10vw;
-    height: 10vw;
+    aspect-ratio:1;
     border: solid 1px #fff;
-}
-.Frame:hover{
-    background: #fff3;
-    transition: background 0.1s;
-}
-.Frame span{
-    display: block;
-    margin: auto;
-}
-label, input{
-    box-sizing: border-box;
-    width: 95%;
-    height: 5vh;
-    margin: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-input{
-    position: relative;
-    background: var(--corPreto);
-    border: solid 3px 1em var(--corVermelho);
+    border-radius: 50%;
+    overflow: auto;
 }
 /* .PHP{
 background-color: #556594;
