@@ -1,34 +1,42 @@
-<?php
- echo $_SERVER['HTTP_ACCEPT_LANGUAGE'];
- ?>
- <style>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Slab:wght@100&display=swap');
 </style>
 <main>
-    <a href="#Sistemas">
+    <a href="#Sistems">
         <div class="OutArrow Flex CentroX CentroY">
             <div class="Arrow"></div>
         </div>
     </a>
     <div class="Welcome Flex CentroY">
-        <div class="Criador Flex Col JCSB">
-            <h3>leonardo</h3>
-            <h3>nunes</h3>
-            <h3>souza</h3>
-        </div>
-        <div class="Nome">
-            <h1>linus</h1>
-        </div>
+        <?php if ($_SESSION['lang']=='br'): ?>
+            <div class="Creator Flex Col JCSB" bef="Criado por">
+                <h3>leonardo</h3>
+                <h3>nunes</h3>
+                <h3>souza</h3>
+            </div>
+            <div class="Name" bef="Bem vindo ao">
+                <h1>linus</h1>
+            </div>
+        <?php else: ?>
+            <div class="Creator Flex Col JCSB" bef="Created by">
+                <h3>leonardo</h3>
+                <h3>nunes</h3>
+                <h3>souza</h3>
+            </div>
+            <div class="Name" bef="Welcome to">
+                <h1>linus</h1>
+            </div>
+        <?php endif; ?>
     </div>
     <div class="Sistemas" id="Sistemas">
-        <div class="Grade Flex JCSA Wrap">
+        <div class="Grid Flex JCSA Wrap">
             <a class="Frame Flex Centro" href="/TK">
                 <span>TK</span>
             </a>
-            <a class="Frame Flex Centro" href="/Ficha">
+            <a class="Frame Flex Centro" href="/Sheet">
                 <span>Ficha</span>
             </a>
-            <a class="Frame Flex Centro" href="/Paleta">
+            <a class="Frame Flex Centro" href="/Pallete">
                 <span>Paleta de Cor</span>
             </a>
             <a class="Frame Flex Centro" href="#">

@@ -5,7 +5,7 @@
                 <div class="Input"><label for="id">Id: </label><input type="text" name="id"></div>
                 <div class="Input"><label for="p1">Senha: </label><input type="password" name="p1"></div>
                 <div class="Input"><label for="p2">Confirmação: </label><input type="password" name="p2"></div>
-                <div class="OutBotao Flex"><button type="submit" name="Entrar" class="Botao" id="Entrar">Enviar-></button></div>
+                <div class="OutButton Flex"><button type="submit" name="Entrar" class="Button" id="Entrar">Enviar-></button></div>
             </form>
         </div>
     </div>

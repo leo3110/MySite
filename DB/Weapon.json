@@ -1,24 +1,24 @@
 {
     "0":{
-        "nome":"Desarmado",
-        "pas":"",
+        "name":"Desarmado",
+        "pass":"",
         "desc":"''Mãos Nuas''"
     },
     "1":{
-        "nome":"espada grama",
-        "pas":"não pode ser removida",
+        "name":"espada grama",
+        "pass":"não pode ser removida",
         "desc":"espada leve feita de grama",
         "agi":4
     },
     "2":{
-        "nome":"espada demonio",
-        "pas":"mais dano contra angelicais",
+        "name":"espada demonio",
+        "pass":"mais dano contra angelicais",
         "desc":"espada feita de sangue de demonios aprisionados",
         "for":4
     },
     "3":{
-        "nome":"espada de merda",
-        "pas":"fede",
+        "name":"espada de merda",
+        "pass":"fede",
         "desc":"literalmente de merda, mas até que boa",
         "for":2
     }

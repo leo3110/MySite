@@ -1,10 +1,10 @@
 <?php
 function login2(){
 	if (isset($_GET['btn'])&&$_GET["btn"] == "logar") {
-		$usuario = new Usuario();
-		$usuario->setNome($_POST["login_usuario"]);
-		$usuario->setSenha($_POST["senha_usuario"]);
-		login($usuario);
+		$user = new User();
+		$user->setNome($_POST["login_user"]);
+		$user->setSenha($_POST["senha_user"]);
+		login($user);
 		$erro = 0;
 		$_SESSION['op']='logado';
 	}
@@ -59,16 +59,16 @@ function cadastraPers($pers){
 		$conn = null;
 	}
 }
-function login($usuario){
+function login($user){
 	$server = "localhost";
 	$user = "site";
 	$pass = "Q2dCoJKZIajxQbUT";
 	try {
-		$login = $_POST["login_usuario"];
-		$senha = $_POST["senha_usuario"];
+		$login = $_POST["login_user"];
+		$senha = $_POST["senha_user"];
 		$conn = new PDO("mysql:host=$server;dbname=rpg",$user,$pass);
 		$conn-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$stmt = $conn->prepare("Select nome,senha from usuario where nome = '". $login ."'");
+		$stmt = $conn->prepare("Select nome,senha from user where nome = '". $login ."'");
 		$stmt->execute();
 		$r = $stmt->fetch(PDO::FETCH_NUM);
 		if ($r[1]!=$senha) {

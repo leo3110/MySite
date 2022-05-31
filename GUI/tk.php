@@ -2,7 +2,7 @@
     <a href="#Teste"><button type="button" name="button">Teste</button></a>
     <script type="text/javascript">
     $(function(){
-        <?php TKBusca(); ?>
+        <?php TKSearch(); ?>
         $(".Button").click(function(){
             var btn = $(this).attr("alvo");
             var xmlhttp = new XMLHttpRequest();
@@ -22,7 +22,7 @@
         <div class="IMG">
             <img src="img/jaeyun.png">
         </div>
-        <div class="IMGBaixo">
+        <div class="IMGDown">
             <h6 class="">Matou o karu <span id="leo_tk">0</span> vezes</h6>
             <button class="Button Up" id="Manda" alvo='leo_tk' objetivo="Incrementa">
                 <i class="fas fa-arrow-circle-up"></i>
@@ -37,7 +37,7 @@
         <div class="IMG">
             <img src="img/lin fei.png" style="transform: scaleX(-1);">
         </div>
-        <div class="IMGBaixo">
+        <div class="IMGDown">
             <h6 class="">Matou o leo <span id="karu_tk">0</span> vezes</h6>
             <button class="Button Up" id="Manda" alvo='karu_tk' objetivo="Incrementa">
                 <i class="fas fa-arrow-circle-up"></i>

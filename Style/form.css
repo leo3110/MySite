@@ -21,10 +21,10 @@ input, input:focus-visible,button{
     margin: 3%;
     border-bottom: 1px solid var(--Vermelho);
 }
-.OutBotao{
+.OutButton{
     justify-content: flex-end;
 }
-.Botao{
+.Button{
     right: 3em;
     margin: 1% 0;
 }

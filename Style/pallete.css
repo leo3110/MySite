@@ -1,44 +1,44 @@
-.Paleta{
+.Pallete{
     border: .1em solid white;
     width: 50em;
     aspect-ratio:1;
     background-color: var(--c1);
     border-radius: 50%;
 }
-.Paleta .Fundo{
+.Pallete .Background{
     aspect-ratio:1;
     background-color: var(--c2);
     border-radius: 50%;
 }
-.Fundo{
+.Background{
     width: 95%;
     height: 95%;
     padding: .3em;
 }
-.Cima,.Baixo{
+.Up,.Down{
     width: 100%;
     height: 95%;
 }
-.CDireita, .CEsquerda{
+.URight, .ULeft{
     width: 45%;
     aspect-ratio:1;
 }
-.CEsquerda{
+.ULeft{
     border-top-left-radius: 100%;
     background-color: var(--c3);
 }
-.CDireita{
+.URight{
     border-top-right-radius: 100%;
     background-color: var(--c4);
 }
-.CBaixo{
+.CDown{
     width: 47%;
     aspect-ratio:1;
     background-color: var(--c5);
 }
-.CBEsquerda{
+.DLeft{
     border-bottom-left-radius: 100%;
 }
-.CBDireita{
+.DRight{
     border-bottom-right-radius: 100%;
 }

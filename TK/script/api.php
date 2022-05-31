@@ -23,9 +23,6 @@ function limpa($limpa){
         return $limpa;
     }
 }
-function wtf($chave){
-
-}
 foreach ($player as $info => $valor) {
     if ($info =='legends') {
         for ($i=0; $i < sizeof($valor); $i++) {

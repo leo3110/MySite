@@ -1,8 +1,8 @@
 h1{margin: 0}
-.OutQuadro{
+.OutFrame{
 
 }
-.Quadro{
+.Frame{
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -38,13 +38,13 @@ h1{margin: 0}
 .Bottom{
     height: 100%;
 }
-.OutHabilidade{
+.OutSkill{
     height: 100%;
     width: 50%;
     padding: .5em;
     border-right: 3px var(--Cinza) solid;
 }
-.Habilidade{
+.Skill{
     height: min-content;
     display: inline-block;
     margin: .5em;
@@ -53,7 +53,7 @@ h1{margin: 0}
     border: .1em var(--Cinza) solid;
     border-radius: 5px;
 }
-.OutEquipamento{
+.OutEquipment{
     display: grid;
     grid: auto / auto auto auto;
     height: 100%;
@@ -61,7 +61,7 @@ h1{margin: 0}
     padding: .5em;
     border-left: 3px var(--Cinza) solid;
 }
-.Equipamento{
+.Equipment{
     height: 90%;
     aspect-ratio:1;
     display: inline-block;
@@ -72,10 +72,10 @@ h1{margin: 0}
 .Top{
     width: auto;
 }
-.Botao{
+.Button{
     gap: 5em;
 }
-.BotaoItem{
+.ButtonItem{
     aspect-ratio:1;
     background: var(--Cinza);
 }

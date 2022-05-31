@@ -15,25 +15,22 @@ h3{
     color: var(--c2);
     padding: 0 10em;
 }
-.Criador{
+.Creator{
     gap: 1em;
 }
-.Nome{
+.Name{
     display: none;
 }
-.Criador::before,.Nome::before{
+.Creator::before,.Name::before{
     position: relative;
     left:-1em;
     font-size: 3em;
     font-family: 'Roboto Slab', serif;
 }
-.Criador::before{
-    content: "Feito por";
+.Creator::before, .Name::before{
+    content: attr(bef);
 }
-.Nome::before{
-    content: "Bem vindo ao";
-}
-.Sistemas{
+.Sistems{
     min-height: 30vh;
     min-width: min-content;
     max-width: 80%;

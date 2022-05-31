@@ -63,9 +63,9 @@ class Personagem{
         echo "<div>Nivel: ".$this->Nivel."</div>";
         echo "</h1>";
     }
-    function printArmas(){
-        include_once 'armas.php';
-        foreach (Armas::returnArmas($this->getArmas()) as $key => $value) {
+    function printWeapon(){
+        include_once 'Weapon.php';
+        foreach (Weapon::returnWeapons($this->getWeapons()) as $key => $value) {
             echo "<div class='Arma Flex JCSB'>";
             echo "<div ";
             foreach ($value as $kkey => $vvalue) {
@@ -75,9 +75,9 @@ class Personagem{
             echo "</div>";
         }
     }
-    function printHabil(){
-        include_once 'habilidades.php';
-        foreach (Habilidades::returnHabil($this->getHabil()) as $key => $value) {
+    function printSkill(){
+        include_once 'Skill.php';
+        foreach (Skill::returnHabil($this->getHabil()) as $key => $value) {
             echo "<div class='Habilidade'>";
             echo "<span ";
             foreach ($value as $kkey => $vvalue) {

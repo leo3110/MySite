@@ -1,14 +1,14 @@
 <?php
-class Usuario {
+class User {
     // private $id;
     // private $senha;
-    private $pers;
+    private $char;
     // public function getId(){return $this->id;}
     // public function setId($id){$this->id = $id;}
     // public function getSenha(){return $this->senha;}
     // public function setSenha($senha){$this->senha = $senha;}
-    public function getPers(){return $this->pers;}
-    public function setPers($pers){$this->pers = $pers;}
+    public function getChar(){return $this->char;}
+    public function setChar($char){$this->char = $char;}
     public function __construct(){
         if (isset($_GET['q'])&&$_GET['q'] == 'send') {
             $this->request();
@@ -23,25 +23,25 @@ class Usuario {
         $c = strtolower($c);
         return $c;
     }
-    function listaPers(){
-        foreach ($this->getPers() as $key) {
+    function listChar(){
+        foreach ($this->getChar() as $key) {
             echo "<div class='Char Flex Centro Col'>
                 <i class='fa-solid fa-user'></i>
                 <span class='Name'>$key</span>
-                <a href='Mesa/index.php?char=$key'>
+                <a href='Table/index.php?char=$key'>
                     <button type='button' name='button'>Entrar</button>
                 </a>
             </div>";
         }
     }
     function login(){
-        $bancoR = fopen('../db/banco.json','r') or die('erro ao logar, fala com o Leo');
-        $bancoR = fread($bancoR, filesize('../db/banco.json'));
-        $bancoR = json_decode($bancoR, true);
-        foreach ($bancoR as $num => $id) {
-            if ($this->clean($_POST['Id']) == $num && $id['chv']==$_POST['Pass']) {
+        $bankR = fopen('../db/bank.json','r') or die('erro ao logar, fala com o Leo');
+        $bankR = fread($bankR, filesize('../db/bank.json'));
+        $bankR = json_decode($bankR, true);
+        foreach ($bankR as $num => $id) {
+            if ($this->clean($_POST['Id']) == $num && $id['key']==$_POST['Pass']) {
                 $_SESSION['Login']='ok';
-                $this->setPers($id['pers']);
+                $this->setChar($id['char']);
                 return $_SESSION['Logado']=$num;
             }
             else {
@@ -49,7 +49,7 @@ class Usuario {
                 return $_SESSION['Login']='erro';
             }
         }
-        unset($bancoR);
+        unset($bankR);
     }
     function request(){
         if (!isset($_POST['id'])&&!isset($_POST['p1'])&&!isset($_POST['p2'])) {
@@ -58,9 +58,9 @@ class Usuario {
         if ($this->clean($_POST['p1'])!=$this->clean($_POST['p2'])) {
             return "Senhas diferentes!";
         }
-        $dados = "'".$this->clean($_POST['id'])."':{'chv':'".$this->clean($_POST['p1'])."','pers':[]}
+        $dados = "'".$this->clean($_POST['id'])."':{'key':'".$this->clean($_POST['p1'])."','char':[]}
 ";
-        $bancoW = fopen('../db/pendente.json','a') or die('erro ao cadastrar solicitação de usuario');
+        $bancoW = fopen('../db/onHold.json','a') or die('erro ao cadastrar solicitação de usuario');
         fwrite($bancoW,$dados);
         unset($dados, $bancoW);
     }

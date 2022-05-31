@@ -5,8 +5,8 @@ if (isset($_GET['char'])&&$_GET['char']!='') {
 }
  ?>
 <main>
-    <div class="OutQuadro FullWidth FullHeight Flex Col JCSA">
-        <div class="Quadro Flex JCSB">
+    <div class="OutFrame FullWidth FullHeight Flex Col JCSA">
+        <div class="Frame Flex JCSB">
             <div class="Atrib Flex">
                 <div class="Left Flex Col JCSB">
                     <!-- <div><i class=""></i>Vida: <span id="vidaT">20</span></div>
@@ -40,13 +40,13 @@ if (isset($_GET['char'])&&$_GET['char']!='') {
                 </div>
             </div>
         </div>
-        <div class="Quadro Flex JCSB">
+        <div class="Frame Flex JCSB">
             <div class="Dados">
-                <button type="button" class="Dado" onclick="D20()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d20">D20</i></button>
-                <button type="button" class="Dado" onclick="D10()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d6">D10</i></button>
-                <button type="button" class="Dado" onclick="D100()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d6">D100</i></button>
-                <button type="button" class="Dado" onclick="D6()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d6">D6</i></button>
-                <button type="button" class="Dado" onclick="Moeda()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d6">Cara ou Coroa</i></button>
+                <button type="button" class="Dice" onclick="D20()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d20">D20</i></button>
+                <button type="button" class="Dice" onclick="D10()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d6">D10</i></button>
+                <button type="button" class="Dice" onclick="D100()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d6">D100</i></button>
+                <button type="button" class="Dice" onclick="D6()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d6">D6</i></button>
+                <button type="button" class="Dice" onclick="Moeda()" onkeyup="mesaDeDados()"> <i class="fa-solid fa-dice-d6">Cara ou Coroa</i></button>
             </div>
             <div class="">
                 <span id="resultado">"MESA"</span>
