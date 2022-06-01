@@ -28,20 +28,18 @@
             </div>
         <?php endif; ?>
     </div>
-    <div class="Sistemas" id="Sistemas">
-        <div class="Grid Flex JCSA Wrap">
-            <a class="Frame Flex Centro" href="/TK">
-                <span>TK</span>
-            </a>
-            <a class="Frame Flex Centro" href="/Sheet">
-                <span>Ficha</span>
-            </a>
-            <a class="Frame Flex Centro" href="/Pallete">
-                <span>Paleta de Cor</span>
-            </a>
-            <a class="Frame Flex Centro" href="#">
-                <span>Sistema 4</span>
-            </a>
-        </div>
+    <div class="Sistems Flex MaxWidth Centro JCSB Wrap" id="Sistems">
+        <a class="Frame Flex Centro" href="/TK">
+            <span>TK</span>
+        </a>
+        <a class="Frame Flex Centro" href="/Sheet">
+            <span>Ficha</span>
+        </a>
+        <a class="Frame Flex Centro" href="/Pallete">
+            <span>Paleta de Cor</span>
+        </a>
+        <a class="Frame Flex Centro" href="#">
+            <span>Sistema 4</span>
+        </a>
     </div>
 </main>
