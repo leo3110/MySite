@@ -28,7 +28,7 @@
             </div>
         <?php endif; ?>
     </div>
-    <div class="Sistems Flex MaxWidth Centro JCSB Wrap" id="Sistems">
+    <div class="Sistems Flex Col MaxWidth JCSB Wrap" id="Sistems">
         <a class="Frame Flex Centro" href="/TK">
             <span>TK</span>
         </a>

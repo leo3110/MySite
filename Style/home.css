@@ -26,25 +26,30 @@ h3{
     left:-1em;
     font-size: 3em;
     font-family: 'Roboto Slab', serif;
-}
-.Creator::before, .Name::before{
     content: attr(bef);
 }
 .Sistems{
     min-height: 30vh;
     min-width: min-content;
-    max-width: 80%;
     margin: 3em auto;
+    padding: 0 3em;
     gap: auto;
 }
 .Frame{
-    font-size: 1.5vw;
-    margin: auto;
-    width: 10vw;
-    aspect-ratio:1;
+    font-size: 90%;
+    padding: .5em;
+    max-width: min-content;
     border: solid 1px #fff;
-    border-radius: 50%;
-    overflow: auto;
+    border-radius: 9999px;
+}
+.Frame::before{
+    position: relative;
+    display: block;
+    content: " ";
+    width: 1em !important;
+    aspect-ratio:1;
+    left: -1em;
+    border: white solid 1px;
 }
 /* .PHP{
 background-color: #556594;
