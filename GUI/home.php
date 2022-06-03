@@ -3,27 +3,27 @@
 </style>
 <main>
     <a href="#Sistems">
-        <div class="OutArrow Flex CentroX CentroY">
+        <div class="OutArrow Flex Centro">
             <div class="Arrow"></div>
         </div>
     </a>
     <div class="Welcome Flex CentroY">
         <?php if ($_SESSION['lang']=='br'): ?>
-            <div class="Creator Flex Col JCSB" bef="Criado por">
+            <div class="Creator Flex Col JCSB" before="Criado por">
                 <h3>leonardo</h3>
                 <h3>nunes</h3>
                 <h3>souza</h3>
             </div>
-            <div class="Name" bef="Bem vindo ao">
+            <div class="Name" before="Bem vindo ao">
                 <h1>linus</h1>
             </div>
         <?php else: ?>
-            <div class="Creator Flex Col JCSB" bef="Created by">
+            <div class="Creator Flex Col JCSB" before="Created by">
                 <h3>leonardo</h3>
                 <h3>nunes</h3>
                 <h3>souza</h3>
             </div>
-            <div class="Name" bef="Welcome to">
+            <div class="Name" before="Welcome to">
                 <h1>linus</h1>
             </div>
         <?php endif; ?>
