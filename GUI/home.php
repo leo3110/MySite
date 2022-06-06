@@ -8,8 +8,8 @@
         </div>
     </a>
     <div class="Welcome Flex CentroY">
-        <?php if ($_SESSION['lang']=='br'): ?>
-            <div class="Creator Flex Col JCSB" before="Criado por">
+        <?php if ($_SESSION['lang']=='pt-br'): ?>
+            <div class="Creator Flex Col JCSB ShadowEffect" before="Criado por">
                 <h3>leonardo</h3>
                 <h3>nunes</h3>
                 <h3>souza</h3>
@@ -18,7 +18,7 @@
                 <h1>linus</h1>
             </div>
         <?php else: ?>
-            <div class="Creator Flex Col JCSB" before="Created by">
+            <div class="Creator Flex Col JCSB ShadowEffect" before="Created by">
                 <h3>leonardo</h3>
                 <h3>nunes</h3>
                 <h3>souza</h3>
@@ -29,14 +29,18 @@
         <?php endif; ?>
     </div>
     <div class="Sistems Flex Col MaxWidth JCSB Wrap" id="Sistems">
+        <a class="Frame Flex Centro" href="/Pallete">
+            <?php if ($_SESSION['lang'] == 'pt-br'): ?>
+                <span>Paleta de Cor</span>
+            <?php else: ?>
+                <span>Color Pallete</span>
+            <?php endif; ?>
+        </a>
         <a class="Frame Flex Centro" href="/TK">
             <span>TK</span>
         </a>
         <a class="Frame Flex Centro" href="/Sheet">
-            <span>Ficha</span>
-        </a>
-        <a class="Frame Flex Centro" href="/Pallete">
-            <span>Paleta de Cor</span>
+            <span>RPG</span>
         </a>
         <a class="Frame Flex Centro" href="#">
             <span>Sistema 4</span>

@@ -1,40 +1,32 @@
-.Body{
-    margin: 0 auto;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-}
 .TK{
-    width: 100%;
     background-image: url("../tk/img/wpp");
     background-size: cover;
-    display: flex;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
+    font-size: 3em;
 }
-.Player{
-    width: 50%;
-    margin: 0;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.IMG{
-    width: 100%;
+.TK::before{
+    display: block;
+    position: absolute;
+    top: .5em;
+    content: attr(before);
     margin: auto;
 }
+.Player{
+    text-align: center;
+}
 img{
-    width: 30vw;
+    margin: auto;
+    width: 70%;
 }
 .Button, .Button::after{
     margin: 1em auto;
     border-radius: 16px;
-    border: solid 1px var(--corPreto);
+    border: solid 1px var(--c2);
 }
 .Button{
     position: relative;
-    background-color: var(--corVermelho);
+    background-color: var(--c1);
     min-height: 1rem;
     aspect-ratio: 1;
     margin: auto;
@@ -56,14 +48,13 @@ img{
     font-size: 90%;
     margin: 1em auto;
     width: 32%;
-    border: .1em solid var(--Cinza);
+    border: .1em solid var(--c2);
     min-height: min-content;
-    wrap: nowrap;
+    text-align: center;
 }
-.InfoLendaItem{
-    margin: auto;
-    width: 30%;
-    height: 2em;
-    border: solid .1em var(--Cinza);
-    border-radius: .3em;
+.InfoLegendItem{
+    margin: .1em auto;
+    width: 40%;
+    border: solid .2em var(--c1);
+    border-radius: 9999px;
 }

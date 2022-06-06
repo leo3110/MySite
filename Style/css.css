@@ -52,6 +52,10 @@ a,a:active,a:hover{
     color: var(--c2);
     text-shadow: 0 0 .3em var(--c3);
 }
+.ShadowEffect{
+    color: var(--c2);
+    text-shadow: .03em .03em .02em var(--c3);
+}
 .FullWidth{width: 100%}
 .FullHeight{min-height: 100vh}
 .Flex{display: flex;}
