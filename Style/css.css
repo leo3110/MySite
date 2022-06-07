@@ -40,6 +40,12 @@ a,a:active,a:hover{
     box-sizing: border-box;
     padding: 0;
 }
+*::before{
+    content: attr(before);
+}
+*::after{
+    content: attr(after);
+}
 .Footer{
     font-size: 1vw;
     display: block;

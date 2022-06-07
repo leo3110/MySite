@@ -1,29 +1,33 @@
 <?php
 // Busca da API
-// $steamId = "76561198274198272";
-// $brawlhallaIdLeo = "3093987";
-// $brawlhallaIdKaru = "47506890";
-// $apiKey = "MIZ5D0IBHUWGN6BMF9UB";
+$steamId = "76561198274198272";
+$brawlhallaIdLeo = "3093987";
+$brawlhallaIdKaru = "47506890";
+$apiKey = "MIZ5D0IBHUWGN6BMF9UB";
 // $url = "https://api.brawlhalla.com/search?steamid=$steamId&api_key=$apiKey";
-// $urlStatPlayer = "https://api.brawlhalla.com/player/$brawlhallaIdKaru/stats?api_key=$apiKey";
-// include "$urlStatPlayer";
-$player = fopen("db/apiBase.json",'r') or die("erro ao abrir arquivo base");
-$player = fread($player, filesize("db/apiBase.json"));
-$player = json_decode($player,true);
+ob_start();
+include "https://api.brawlhalla.com/player/$brawlhallaIdLeo/stats?api_key=$apiKey";
+$urlStatPlayer = ob_get_contents();
+// $player = fopen("db/apiBase.json",'r') or die("erro ao abrir arquivo base");
+// $player = fread($player, filesize("db/apiBase.json"));
+$player = json_decode($urlStatPlayer,true);
 $keys = fopen("db/keys.json",'r') or die("erro ao abrir arquivo chaves");
 $keys = fread($keys, filesize("db/keys.json"));
 $keys = json_decode($keys,true);
+ob_end_clean();
 function clean($clean){
-    if (gettype($clean) == "double") {
-        $clean = $clean*100;
-        $clean = round($clean)."%";
-        return $clean;
-    }
-    else if (gettype($clean) == "string") {
-        return ucfirst($clean);
-    }
-    else {
-        return $clean;
+    switch (gettype($clean)) {
+        case "double":
+            $clean = $clean*100;
+            $clean = round($clean)."%";
+            return $clean;
+            break;
+        case "string":
+            return ucfirst($clean);
+            break;
+        default:
+            return $clean;
+            break;
     }
 }
 function changeKey($a,$b){

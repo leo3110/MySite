@@ -1,5 +1,5 @@
 <main>
-    <div class="TK FullHeight Flex JCSA Centro" before='Brawlhalla TeamKill'>
+    <div class="TK FullHeight Flex JCSA Centro" before='Brawlhalla TeamKill' after='Isso tudo na Ranked 2x2'>
         <div class="Player Flex Col JCSB">
             <img src="img/jaeyun.png">
             <h6 class="Name">Esse sou eu (a maioria das vezes)</h6>

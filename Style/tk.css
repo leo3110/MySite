@@ -1,16 +1,22 @@
 .TK{
+    position: relative;
     background-image: url("../tk/img/wpp");
     background-size: cover;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     font-size: 3em;
+    padding: 2em 0;
+}
+.TK::before,.TK::after{
+    display: inline-block;
+    position: absolute;
+    margin: auto;
 }
 .TK::before{
-    display: block;
-    position: absolute;
-    top: .5em;
-    content: attr(before);
-    margin: auto;
+    top: .3em;
+}
+.TK::after{
+    bottom: 0;
 }
 .Player{
     text-align: center;
@@ -19,30 +25,9 @@ img{
     margin: auto;
     width: 70%;
 }
-.Button, .Button::after{
-    margin: 1em auto;
-    border-radius: 16px;
-    border: solid 1px var(--c2);
-}
-.Button{
-    position: relative;
-    background-color: var(--c1);
-    min-height: 1rem;
-    aspect-ratio: 1;
-    margin: auto;
-    padding: auto;
-    font-size: 50%;
-}
-.Button:hover::after{
-    display: block;
-    position: absolute;
-    content: attr(objetivo);
-    color: #fff;
-    top: 100%;
-    right: -50%;
-    width: 3rem;
-    background: #0006;
-    white-space: nowrap;
+.Test{
+    background: var(--c1);
+    color: var(--c2);
 }
 .Legend{
     font-size: 90%;
@@ -55,6 +40,8 @@ img{
 .InfoLegendItem{
     margin: .1em auto;
     width: 40%;
+    background-color: var(--c5);
     border: solid .2em var(--c1);
+    text-shadow: 0 0 .2em var(--c3);
     border-radius: 9999px;
 }
