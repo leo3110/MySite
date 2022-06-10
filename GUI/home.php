@@ -9,21 +9,21 @@
     </a>
     <div class="Welcome Flex CentroY">
         <?php if ($_SESSION['lang']=='pt-br'): ?>
-            <div class="Creator Flex Col JCSB ShadowEffect" before="Criado por">
+            <div class="Creator BA Flex Col JCSB ShadowEffect" before="Criado por">
                 <h3>leonardo</h3>
                 <h3>nunes</h3>
                 <h3>souza</h3>
             </div>
-            <div class="Name" before="Bem vindo ao">
+            <div class="Name BA" before="Bem vindo ao">
                 <h1>linus</h1>
             </div>
         <?php else: ?>
-            <div class="Creator Flex Col JCSB ShadowEffect" before="Created by">
+            <div class="Creator BA Flex Col JCSB ShadowEffect" before="Created by">
                 <h3>leonardo</h3>
                 <h3>nunes</h3>
                 <h3>souza</h3>
             </div>
-            <div class="Name" before="Welcome to">
+            <div class="Name BA" before="Welcome to">
                 <h1>linus</h1>
             </div>
         <?php endif; ?>

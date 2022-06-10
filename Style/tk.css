@@ -3,7 +3,7 @@
     background-image: url("../tk/img/wpp");
     background-size: cover;
     color: #fff;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 0 0 2px #000;
     font-size: 3em;
     padding: 2em 0;
 }
@@ -23,7 +23,7 @@
 }
 img{
     margin: auto;
-    width: 70%;
+    width: 65%;
 }
 .Test{
     background: var(--c1);
