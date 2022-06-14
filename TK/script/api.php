@@ -11,11 +11,16 @@ ob_start();
 include "https://api.brawlhalla.com/player/$brawlIdKaru/stats?api_key=$apiKey";
 $urlStatKaru = ob_get_contents();
 $urlStatKaru = json_decode($urlStatKaru,true);
+ob_clean();
+$tkKaru;
 foreach ($urlStatKaru['legends'] as $legends => $value) {
-    if ($value == "teamkos") {
-        echo $value;
-    }
+    // if ($value == "teamkos") {
+    //     echo $value;
+    //     echo "sahdjksahkjd";
+    // }
+    $tkKaru = $tkKaru + $legends;
 }
+unset($urlStatKaru);
 ob_clean();
 
 
