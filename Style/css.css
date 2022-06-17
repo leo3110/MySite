@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Slab:wght@100&display=swap');
 :root{
     --c1:rgba(98, 28, 115, 0.31);
     --c2:rgba(161, 229, 217, 1);
@@ -62,6 +63,9 @@ a,a:active,a:hover{
 .ShadowEffect{
     color: var(--c2);
     text-shadow: .03em .03em .02em var(--c3);
+}
+.CoolFont{
+    font-family: 'Major Mono Display', monospace;
 }
 .FullWidth{width: 100%}
 .FullHeight{min-height: 100vh}
