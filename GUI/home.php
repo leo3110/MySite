@@ -1,13 +1,10 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Slab:wght@100&display=swap');
-</style>
 <main>
     <a href="#Sistems">
         <div class="OutArrow Flex Centro">
             <div class="Arrow"></div>
         </div>
     </a>
-    <div class="Welcome Flex CentroY">
+    <div class="Welcome ShadowEffect CoolFont Flex CentroY">
         <?php if ($_SESSION['lang']=='pt-br'): ?>
             <div class="Creator BA Flex Col JCSB ShadowEffect" before="Criado por">
                 <h3>leonardo</h3>

@@ -25,9 +25,17 @@ img{
     margin: auto;
     width: 65%;
 }
-.Test{
+.Info{
+    font-size: 300%;
+    min-height: min-content;
+    padding: 1em 0;
     background: var(--c1);
     color: var(--c2);
+}
+.BodyText{
+    column-count: 3;
+    margin: 1em;
+    text-align: justify;
 }
 .Legend{
     font-size: 90%;
