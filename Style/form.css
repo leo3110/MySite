@@ -11,15 +11,15 @@ input, input:focus-visible,button{
 .Login{
     min-height: 100%;
     width: 30%;
-    border-left: 2px solid var(--Vermelho);
-    border-right: 2px solid var(--Vermelho);
+    border-left: 2px solid var(--c4);
+    border-right: 2px solid var(--c4);
 }
 .Form{
     width: 100%;
 }
 .Input{
     margin: 3%;
-    border-bottom: 1px solid var(--Vermelho);
+    border-bottom: 1px solid var(--c4);
 }
 .OutButton{
     justify-content: flex-end;

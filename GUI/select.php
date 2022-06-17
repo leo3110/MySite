@@ -2,7 +2,7 @@
     <div class="Select FullHeight FullWidth Flex Centro">
         <!-- INICIO OBJETOS -->
 
-            <?php $u->listaPers(); ?>
+            <?php $u->listChar(); ?>
 
         <!-- FIM OBJETOS -->
     </div>

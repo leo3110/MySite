@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['char'])&&$_GET['char']!='') {
-    $_SESSION['personagem'] = $_GET['char'];
-    $class = new Personagem();
+    $_SESSION['char'] = $_GET['char'];
+    $class = new Character();
 }
  ?>
 <main>
@@ -27,12 +27,12 @@ if (isset($_GET['char'])&&$_GET['char']!='') {
                         <?php  $class->printName(); ?>
                     </div>
                     <div class="RightInfo Flex Col col-8">
-	                    <?php  $class->printArmas(); ?>
+	                    <?php  $class->printWeapon(); ?>
                     </div>
                 </div>
                 <div class="Bottom Flex">
                     <div class="OutHabilidade Flex Wrap">
-                        <?php  $class->printHabil(); ?>
+                        <?php  $class->printSkill(); ?>
                     </div>
                     <div class="OutEquipamento">
                         <?php  $class->printEquip(); ?>

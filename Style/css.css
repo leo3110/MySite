@@ -15,12 +15,13 @@
 }
 html,body{
     height: 100%;
-    background-color: black;
+	background-color: black;
     margin: 0;
     scroll-behavior: smooth;
 }
 main{
-    min-height: inherit;
+	background-color: var(--c1);
+    min-height: 100vh;
 }
 h1,h2,h3,h4,h5,h6{
     margin:0;

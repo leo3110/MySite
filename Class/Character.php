@@ -1,6 +1,6 @@
 <?php
-class Personagem{
-    private $Nome,$Nivel,$Raca,$Vigor,$Forca,$Destr,$Agili,$Resis,$Intel,$Conhe,$Inven,$Armas,$Habil,$Equip;
+class Character{
+    private $Nome,$Nivel,$Raca,$Vigor,$Forca,$Destr,$Agili,$Resis,$Intel,$Conhe,$Inven,$Weapon,$Skill,$Equip;
     public function getNome(){return $this->Nome;}
     public function setNome($Nome){$this->Nome = $Nome;}
     public function getNivel(){return $this->Nivel;}
@@ -23,15 +23,15 @@ class Personagem{
     public function setConhe($Conhe){$this->Conhe = $Conhe;}
     public function getInven(){return $this->Inven;}
     public function setInven($Inven){$this->Inven = $Inven;}
-    public function getArmas(){return $this->Armas;}
-    public function setArmas($Armas){$this->Armas = $Armas;}
-    public function getHabil(){return $this->Habil;}
-    public function setHabil($Habil){$this->Habil = $Habil;}
+    public function getWeapon(){return $this->Weapon;}
+    public function setWeapon($Weapon){$this->Weapon = $Weapon;}
+    public function getSkill(){return $this->Skill;}
+    public function setSkill($Skill){$this->Skill = $Skill;}
     public function getEquip(){return $this->Equip;}
     public function setEquip($Equip){$this->Equip = $Equip;}
     function __construct(){
-        $bancoR = fopen('../../db/'.$_SESSION['personagem'].'.json','r') or die('erro ao consultar personagem');
-        $bancoR = fread($bancoR,filesize('../../db/'.$_SESSION['personagem'].'.json'));
+        $bancoR = fopen('../../db/'.$_SESSION['char'].'.json','r') or die('erro ao consultar char');
+        $bancoR = fread($bancoR,filesize('../../db/'.$_SESSION['char'].'.json'));
         $bancoR = json_decode($bancoR,true);
         $this->setNome($bancoR['Nome']);
         $this->setNivel($bancoR['Nivel']);
@@ -44,8 +44,8 @@ class Personagem{
         $this->setIntel($bancoR['Intel']);
         $this->setConhe($bancoR['Conhe']);
         $this->setInven($bancoR['Inven']);
-        $this->setArmas($bancoR['Armas']);
-        $this->setHabil($bancoR['Habil']);
+        $this->setWeapon($bancoR['Weapon']);
+        $this->setSkill($bancoR['Skill']);
         $this->setEquip($bancoR['Equip']);
     }
     function printAtrib(){
@@ -65,38 +65,38 @@ class Personagem{
     }
     function printWeapon(){
         include_once 'Weapon.php';
-        foreach (Weapon::returnWeapons($this->getWeapons()) as $key => $value) {
+        foreach (Weapon::returnWeapon($this->getWeapon()) as $key => $value) {
             echo "<div class='Arma Flex JCSB'>";
             echo "<div ";
             foreach ($value as $kkey => $vvalue) {
                 echo "$kkey='$vvalue' ";
             }
-            echo ">".$value['nome']."</div>";
+            echo ">".$value['name']."</div>";
             echo "</div>";
         }
     }
     function printSkill(){
         include_once 'Skill.php';
-        foreach (Skill::returnHabil($this->getHabil()) as $key => $value) {
-            echo "<div class='Habilidade'>";
+        foreach (Skill::returnSkill($this->getSkill()) as $key => $value) {
+            echo "<div class='Skillidade'>";
             echo "<span ";
             foreach ($value as $kkey => $vvalue) {
                 echo "$kkey='$vvalue' ";
             }
-            echo ">".$value['nome']."</span>";
+            echo ">".$value['name']."</span>";
             echo "</div>";
         }
     }
     function printEquip(){
-        include_once 'equipamentos.php';
+        include_once 'Equipment.php';
         $equips = 6;
-        foreach (Equipamento::returnEquip($this->getEquip()) as $key => $value) {
+        foreach (Equipment::returnEquip($this->getEquip()) as $key => $value) {
             echo "<div class='Equipamento Flex Col'";
             foreach ($value['bonus'] as $chave => $valor) {
                 echo "$chave='$valor'";
             }
             echo "pas='".$value['pas']."' desc='".$value['desc']."'>";
-            echo "<span>".$value['nome']."</span>";
+            echo "<span>".$value['name']."</span>";
             echo "<div class='Botao'>";
             echo "</div>";
             echo "</div>";

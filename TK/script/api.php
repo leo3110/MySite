@@ -20,11 +20,11 @@ class APIBrawl {
         setStatLeo(ob_get_contents());
         ob_end_clean();
     }
-    static function changeKey($a,$b){
+    function changeKey($a,$b){
         $a = $b["$a"];
         return $a;
     }
-    static function clean($clean){
+    function clean($clean){
         switch (gettype($clean)) {
             case "double":
                 $clean = $clean*100;
@@ -39,7 +39,7 @@ class APIBrawl {
                 break;
         }
     }
-    static function printSolo($a,$b){
+    function printSolo($a,$b){
         echo "Detalhes do Leo<br>";
         echo changeKey("level",$b).": ".$a['level']."<br>";
         echo changeKey("xp_percentage",$b).": ".clean($a['xp_percentage'])."<br>";
@@ -48,14 +48,14 @@ class APIBrawl {
         echo "Derrotas: ";
         echo $a['games']-$a['wins'];
     }
-    static function printTKKaru(){
-        $teste = $this->getStatKaru();
+    function printTKKaru(){
+        $this->teste = getStatKaru();
         foreach ($teste['legends'] as $legends => $value) {
             $this->tkKaru = $this->tkKaru + $value['teamkos'];
         }
         echo $tkKaru;
     }
-    static function printTKLeo(){
+    function printTKLeo(){
         $this->statLeo = json_decode($this->statLeo,true);
         $tkLeo;
         foreach ($this->statLeo['legends'] as $legends => $value) {
@@ -64,7 +64,7 @@ class APIBrawl {
         ob_end_clean();
         echo $tkLeo;
     }
-    static function printLeo(){
+    function printLeo(){
         $player = json_decode(getStatLeo(),true);
         $keys = fopen("db/keys.json",'r') or die("erro ao abrir arquivo chaves");
         $keys = fread($keys, filesize("db/keys.json"));

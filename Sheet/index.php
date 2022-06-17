@@ -1,8 +1,8 @@
 <?php
 $_SESSION['op']='form';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    include '../classe/usuario.php';
-    $u = new Usuario;
+    include '../Class/User.php';
+    $u = new User;
     if (isset($_SESSION['Logado'])) {
         $_SESSION['op'] = 'select';
     }

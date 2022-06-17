@@ -1,24 +1,24 @@
 {
     "0":{
-        "nome":"Vazio",
+        "name":"Vazio",
         "bonus":{},
         "pas":"Nenhuma",
         "desc":"Pode equipar outro acessório"
     },
     "1":{
-        "nome":"Amuleto",
+        "name":"Amuleto",
         "bonus":{"agi":4,"res":6},
         "pas":"adsamjdklasjdlkas",
         "desc":"Protege contra alguma coisa aí"
     },
     "2":{
-        "nome":"Isqueiro",
+        "name":"Isqueiro",
         "bonus":{"for":4},
         "pas":"passiva",
         "desc":"Fogo, né, crl?"
     },
     "3":{
-        "nome":"Bomba",
+        "name":"Bomba",
         "bonus":{"for":10},
         "pas":"3x dano",
         "desc":"Explosivo fora da validade. mais destrutivo que quando novo."

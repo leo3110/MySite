@@ -10,7 +10,7 @@
     "Intel":30,
     "Conhe":30,
     "Inven":"nada",
-    "Armas":["0"],
-    "Habil":["0"],
+    "Weapon":["0"],
+    "Skill":["0"],
     "Equip":["0"]
 }

@@ -1,12 +1,12 @@
 .Select{
     height: 100%;
-    border-left: 2px solid var(--Vermelho);
-    border-right: 2px solid var(--Vermelho);
+    border-left: 2px solid var(--c4);
+    border-right: 2px solid var(--c4);
 }
 .Char{
     width: 10%;
     aspect-ratio:1;
-    border: solid 3px var(--Vermelho);
+    border: solid 3px var(--c4);
     border-radius: 16px;
     margin: 1em;
 }
@@ -15,7 +15,7 @@
     bottom: 1em;
     right: 1em;
     border-radius: 50%;
-    background: var(--Vermelho);
+    background: var(--c4);
     width: 2em;
     aspect-ratio:1;
     font-size: 2em;

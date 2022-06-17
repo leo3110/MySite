@@ -1,6 +1,6 @@
 <?php
 class Weapon {
-    public static function returnWeapons($a){
+    public static function returnWeapon($a){
         $BankR = fopen('../../db/Weapon.json','r') or die('erro ao abrir weapons');
         $BankR = fread($BankR,filesize('../../db/Weapon.json'));
         $BankR = json_decode($BankR,true);
