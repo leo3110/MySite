@@ -27,5 +27,5 @@
             os "TKs" no meio da partida e posso esfregar na cara do Karu que ele não sabe diferenciar um aliado de um inimigo.
         </h6>
     </div>
-    <?php echo printLeo($statKaru); ?>
+    <?php echo printLeo($statLeo); ?>
 </main>

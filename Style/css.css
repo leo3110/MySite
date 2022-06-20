@@ -62,7 +62,7 @@ a,a:active,a:hover{
 }
 .ShadowEffect{
     color: var(--c2);
-    text-shadow: .03em .03em .02em var(--c3);
+    text-shadow: 3px 3px 2px var(--c3);
 }
 .CoolFont{
     font-family: 'Major Mono Display', monospace;

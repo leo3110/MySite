@@ -75,7 +75,7 @@ function printLeo($a){
             }
             echo "}<br>";
             default:
-            echo $info.": $valor<br>";
+            echo "<div class='InfoItem'>".changeKey($info,$keys).": ".clean($valor)."</div>";
             break;
         }
     }

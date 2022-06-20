@@ -37,6 +37,12 @@ img{
     margin: 1em;
     text-align: justify;
 }
+.InfoItem{
+    display: inline-block;
+    width: 25%;
+    border: .1em solid var(--c2);
+    text-shadow: 0 0 .2em var(--c3);
+}
 .Legend{
     font-size: 90%;
     margin: 1em auto;
