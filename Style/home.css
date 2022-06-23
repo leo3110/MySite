@@ -2,7 +2,7 @@ h1{
     font-size: 20vw;
 }
 h3{
-    font-size: 5em;
+    font-size: 5vw;
 }
 .Welcome{
     height: 95vh;
@@ -19,7 +19,7 @@ h3{
 .Creator::before,.Name::before{
     position: relative;
     left:-1em;
-    font-size: 3em;
+    font-size: 5vh;
     font-family: 'Roboto Slab', serif;
 }
 .Sistems{
