@@ -22,13 +22,13 @@ function clean($clean){
             $clean = $clean*100;
             $clean = round($clean)."%";
             return $clean;
-            break;
+        break;
         case "string":
             return ucfirst($clean);
-            break;
+        break;
         default:
             return $clean;
-            break;
+        break;
     }
 }
 function printTKPlayer($a){
@@ -51,14 +51,14 @@ function printLeo($a){
     $keys = fopen("db/keys.json",'r') or die("erro ao abrir arquivo chaves");
     $keys = fread($keys, filesize("db/keys.json"));
     $keys = json_decode($keys,true);
-    foreach ($player as $info => $valor) {
+    foreach ($player as $info => $value) {
         switch ($info) {
             case 'legends':
-            for ($i=0; $i < sizeof($valor); $i++) {
-                echo "<div class='Legend'>";
-                echo "<h1 class='LegendName'>".$valor["$i"]["legend_name_key"]."</h1>";
+            for ($i=0; $i < sizeof($value); $i++) {
+                echo "<div class='Legend col-3'>";
+                echo "<h1 class='LegendName'>".$value["$i"]["legend_name_key"]."</h1>";
                 echo "<div class='InfoLegend Flex Wrap'>";
-                foreach ($valor["$i"] as $lenda => $stat) {
+                foreach ($value["$i"] as $lenda => $stat) {
                     if ($lenda != "legend_name_key") {
                         echo "<div class='InfoLegendItem Flex Col Centro ShadowEffect'><span>".changeKey($lenda,$keys)."</span><span>".clean($stat)."</span>";
                         echo "</div>";
@@ -67,16 +67,65 @@ function printLeo($a){
                 echo "</div>";
                 echo "</div>";
             }
-            break;
-            case 'clan':
-            echo "Clan {<br>";
-            foreach ($valor as $clanKey => $clanVal) {
-                echo "$clanKey: $clanVal<br>";
-            }
-            echo "}<br>";
-            default:
-            echo "<div class='InfoItem'>".changeKey($info,$keys).": ".clean($valor)."</div>";
-            break;
+        	break;
+            // case 'clan':
+            // echo "Clan {<br>";
+            // foreach ($value as $clanKey => $clanVal) {
+            //     echo "$clanKey: $clanVal<br>";
+            // }
+            // echo "}<br>";
+			// break;
+			case 'name':
+				echo "<div class='InfoItem NameInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+			break;
+			case 'games':
+				$games = clean($value);
+				echo "<div class='InfoItem GamesInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+			break;
+			case 'wins':
+				echo "<div class='InfoItem WinsInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='InfoItem LossesInfo'>Derrotas:";
+				echo $games - clean($value);
+				unset($games);
+				echo "</div>";
+			break;
+			case 'level':
+				echo "<div class='InfoItem LevelInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+			break;
+			case 'xp_percentage':
+				echo "<div class='InfoItem PercentageInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+			break;
+			case 'damagebomb':
+				$danoGadget = clean($value);
+			break;
+			case 'damagemine':
+				$danoGadget = $danoGadget + clean($value);
+			break;
+			case 'damagespikeball':
+				$danoGadget = $danoGadget + clean($value);
+				echo "<div class='InfoItem DamageGadgetInfo'>Dano com arremessáveis: ".$danoGadget."</div>";
+				unset($danoGadget);
+			break;
+			case 'kobomb':
+				$koGadget = clean($value);
+			break;
+			case 'komine':
+				$koGadget = $koGadget + clean($value);
+			break;
+			case 'kospikeball':
+				$koGadget = $koGadget + clean($value);
+				echo "<div class='InfoItem DamageGadgetInfo'>Nocautes com arremessáveis: ".$koGadget."</div>";
+				unset($koGadget);
+			break;
+			case 'damagesidekick':
+				echo "<div class='InfoItem DamageSidekickInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+			break;
+			case 'xp':
+				echo "<div class='InfoItem XpInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+			break;
+			case 'kosidekick':
+				echo "<div class='InfoItem KoSidekickInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+			break;
         }
     }
 }
