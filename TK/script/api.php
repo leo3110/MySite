@@ -76,24 +76,24 @@ function printLeo($a){
             // echo "}<br>";
 			// break;
 			case 'name':
-				echo "<div class='InfoItem NameInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='NameInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
 			case 'games':
 				$games = clean($value);
-				echo "<div class='InfoItem GamesInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='GamesInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
 			case 'wins':
-				echo "<div class='InfoItem WinsInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
-				echo "<div class='InfoItem LossesInfo'>Derrotas:";
+				echo "<div class='WinsInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='LossesInfo'>Derrotas:";
 				echo $games - clean($value);
 				unset($games);
 				echo "</div>";
 			break;
 			case 'level':
-				echo "<div class='InfoItem LevelInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='LevelInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
 			case 'xp_percentage':
-				echo "<div class='InfoItem PercentageInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='PercentageInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
 			case 'damagebomb':
 				$danoGadget = clean($value);
@@ -103,7 +103,7 @@ function printLeo($a){
 			break;
 			case 'damagespikeball':
 				$danoGadget = $danoGadget + clean($value);
-				echo "<div class='InfoItem DamageGadgetInfo'>Dano com arremessáveis: ".$danoGadget."</div>";
+				echo "<div class='DamageGadgetInfo'>Dano com arremessáveis: ".$danoGadget."</div>";
 				unset($danoGadget);
 			break;
 			case 'kobomb':
@@ -114,17 +114,17 @@ function printLeo($a){
 			break;
 			case 'kospikeball':
 				$koGadget = $koGadget + clean($value);
-				echo "<div class='InfoItem DamageGadgetInfo'>Nocautes com arremessáveis: ".$koGadget."</div>";
+				echo "<div class='DamageGadgetInfo'>Nocautes com arremessáveis: ".$koGadget."</div>";
 				unset($koGadget);
 			break;
 			case 'damagesidekick':
-				echo "<div class='InfoItem DamageSidekickInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='DamageSidekickInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
 			case 'xp':
-				echo "<div class='InfoItem XpInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='XpInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
 			case 'kosidekick':
-				echo "<div class='InfoItem KoSidekickInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='KoSidekickInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
         }
     }

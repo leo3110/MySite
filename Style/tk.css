@@ -58,3 +58,37 @@ img{
     text-shadow: 0 0 .2em var(--c3);
     border-radius: 9999px;
 }
+.NameInfo{
+    display: block;
+    font-size: 3em;
+}
+.GamesInfo{
+
+}
+.WinsInfo{
+
+}
+.LossesInfo{
+
+}
+.LevelInfo{
+
+}
+.PercentageInfo{
+
+}
+.DamageGadgetInfo{
+
+}
+.DamageGadgetInfo{
+
+}
+.DamageSidekickInfo{
+
+}
+.XpInfo{
+
+}
+.KoSidekickInfo{
+
+}

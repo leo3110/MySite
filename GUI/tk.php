@@ -27,7 +27,10 @@
             os "TKs" no meio da partida e posso esfregar na cara do Karu que ele não sabe diferenciar um aliado de um inimigo.
         </h6>
     </div>
-	<div class="Flex Wrap">
-    	<?php echo printLeo($statLeo); ?>
+	<div class="API Flex CentroX">
+        <h2 class="">Informação geral</h2>
+    </div>
+    <div class="">
+        <?php echo printLeo($statLeo); ?>
 	</div>
 </main>
