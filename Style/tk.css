@@ -58,6 +58,9 @@ img{
     text-shadow: 0 0 .2em var(--c3);
     border-radius: 9999px;
 }
+.GeneralInfo{
+    width: 33vw;
+}
 .NameInfo{
     display: block;
     font-size: 3em;

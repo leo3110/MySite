@@ -56,7 +56,7 @@ function printLeo($a){
             case 'legends':
             for ($i=0; $i < sizeof($value); $i++) {
                 echo "<div class='Legend col-3'>";
-                echo "<h1 class='LegendName'>".$value["$i"]["legend_name_key"]."</h1>";
+                echo "<h1 class='LegendName'>".clean($value["$i"]["legend_name_key"])."</h1>";
                 echo "<div class='InfoLegend Flex Wrap'>";
                 foreach ($value["$i"] as $lenda => $stat) {
                     if ($lenda != "legend_name_key") {
@@ -76,24 +76,24 @@ function printLeo($a){
             // echo "}<br>";
 			// break;
 			case 'name':
-				echo "<div class='NameInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div><div class='GeneralInfo NameInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
 			case 'games':
 				$games = clean($value);
-				echo "<div class='GamesInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='GeneralInfo GamesInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
 			case 'wins':
-				echo "<div class='WinsInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
-				echo "<div class='LossesInfo'>Derrotas:";
+				echo "<div class='GeneralInfo WinsInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='GeneralInfo LossesInfo'>Derrotas:";
 				echo $games - clean($value);
 				unset($games);
 				echo "</div>";
 			break;
 			case 'level':
-				echo "<div class='LevelInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='GeneralInfo LevelInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
 			case 'xp_percentage':
-				echo "<div class='PercentageInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='GeneralInfo PercentageInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
 			case 'damagebomb':
 				$danoGadget = clean($value);
@@ -103,7 +103,7 @@ function printLeo($a){
 			break;
 			case 'damagespikeball':
 				$danoGadget = $danoGadget + clean($value);
-				echo "<div class='DamageGadgetInfo'>Dano com arremessáveis: ".$danoGadget."</div>";
+				echo "<div class='GeneralInfo DamageGadgetInfo'>Dano com arremessáveis: ".$danoGadget."</div>";
 				unset($danoGadget);
 			break;
 			case 'kobomb':
@@ -114,17 +114,17 @@ function printLeo($a){
 			break;
 			case 'kospikeball':
 				$koGadget = $koGadget + clean($value);
-				echo "<div class='DamageGadgetInfo'>Nocautes com arremessáveis: ".$koGadget."</div>";
+				echo "<div class='GeneralInfo DamageGadgetInfo'>Nocautes com arremessáveis: ".$koGadget."</div>";
 				unset($koGadget);
 			break;
 			case 'damagesidekick':
-				echo "<div class='DamageSidekickInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='GeneralInfo DamageSidekickInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
 			case 'xp':
-				echo "<div class='XpInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='GeneralInfo XpInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
 			break;
 			case 'kosidekick':
-				echo "<div class='KoSidekickInfo'>".changeKey($info,$keys).": ".clean($value)."</div>";
+				echo "<div class='GeneralInfo KoSidekickInfo'>".changeKey($info,$keys).": ".clean($value)."</div></div>";
 			break;
         }
     }

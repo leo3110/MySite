@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="Info FullWidth Flex Wrap CentroX">
-        <h1 class="ShadowEffect">Um pouco sobre essa página...</h1>
+        <h1 class="ShadowEffect CoolFont">um pouco sobre essa página...</h1>
         <h6 class="BodyText">
             Essa página nasceu como uma brincadeira entre eu e um amigo meu, o Karu. Brawlhalla é um jogo de luta online, e nós dois costumamos
             jogar em duplas. O problema é: o modo ranqueado tem fogo amigo...
@@ -30,7 +30,7 @@
 	<div class="API Flex CentroX">
         <h2 class="">Informação geral</h2>
     </div>
-    <div class="">
+    <div class="Flex Wrap">
         <?php echo printLeo($statLeo); ?>
 	</div>
 </main>

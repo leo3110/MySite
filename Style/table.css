@@ -1,6 +1,6 @@
 h1{margin: 0}
 .OutFrame{
-
+    background: var(--c1);
 }
 .Frame{
     padding-left: 1em;

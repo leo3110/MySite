@@ -1,9 +1,11 @@
 .Select{
+    background: var(--c1);
     height: 100%;
     border-left: 2px solid var(--c4);
     border-right: 2px solid var(--c4);
 }
 .Char{
+    background: var(--c1);
     width: 10%;
     aspect-ratio:1;
     border: solid 3px var(--c4);
