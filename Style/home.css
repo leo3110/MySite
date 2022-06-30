@@ -22,44 +22,25 @@ h3{
     font-size: 5vh;
     font-family: 'Roboto Slab', serif;
 }
-.Sistems{
-    color: black;
+.OutSystem{
     min-height: 30vh;
     min-width: min-content;
-    margin: 3em auto;
+    margin: 3em auto auto;
+    border-top: solid 1px var(--c4);
+    border-bottom: solid 1px var(--c4);
     padding: 2em 3em;
     gap: auto;
     background-color: var(--c1);
 }
-.Frame{
+.System{
     font-size: 90%;
     padding: .5em;
     width: 5em;
     aspect-ratio:1;
     transform: rotate(45deg);
-    border: solid 1px #fff;
+    border: solid 1px white;
     text-align: center;
-    /* border-radius: 9999px; */
 }
-.Frame *{
+.System *, .System::before{
     transform: rotate(-45deg);
 }
-/* .Frame::before{
-    position: relative;
-    display: block;
-    content: " ";
-    height: 1em;
-    aspect-ratio:1;
-    left: -2em;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    border-right: 0;
-    border-top: 0;
-} */
-/* .PHP{
-background-color: #556594;
-border-radius: 16px;
-color: black;
-text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-} */

@@ -55,7 +55,7 @@ function printLeo($a){
         switch ($info) {
             case 'legends':
             for ($i=0; $i < sizeof($value); $i++) {
-                echo "<div class='Legend col-3'>";
+                echo "<div class='Legend Flex JCSB Centro col-3'>";
                 echo "<h1 class='LegendName'>".clean($value["$i"]["legend_name_key"])."</h1>";
                 echo "<div class='InfoLegend Flex Wrap'>";
                 foreach ($value["$i"] as $lenda => $stat) {

@@ -1,5 +1,5 @@
 <main>
-    <a href="#Sistems">
+    <a href="#OutSystem">
         <div class="OutArrow Flex Centro">
             <div class="Arrow"></div>
         </div>
@@ -25,22 +25,26 @@
             </div>
         <?php endif; ?>
     </div>
-    <div class="Sistems Flex Col MaxWidth JCSB Wrap" id="Sistems">
-        <a class="Frame Flex Centro" href="/Pallete">
+    <div class="OutSystem Flex Col MaxWidth JCSB Wrap" id="OutSystem">
+        <a class="System Flex Centro" href="/Pallete">
             <?php if ($_SESSION['lang'] == 'pt-br'): ?>
                 <span>Paleta de Cor</span>
             <?php else: ?>
                 <span>Color Pallete</span>
             <?php endif; ?>
         </a>
-        <a class="Frame Flex Centro" href="/TK">
+        <a class="System Flex Centro" href="/TK">
             <span>TK</span>
         </a>
-        <a class="Frame Flex Centro" href="/Sheet">
+        <a class="System Flex Centro" href="/Sheet">
             <span>RPG</span>
         </a>
-        <a class="Frame Flex Centro" href="#">
-            <span>Sistema 4</span>
+        <a class="System Flex Centro" href="#">
+            <?php if ($_SESSION['lang'] == 'pt-br'): ?>
+                <span>Em Breve</span>
+            <?php else: ?>
+                <span>Coming Soon</span>
+            <?php endif; ?>
         </a>
     </div>
 </main>

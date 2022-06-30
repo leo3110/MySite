@@ -12,7 +12,7 @@
     border-width: 0 0.1em 0.1em 0;
     transform: rotate(45deg);
 }
-.Frame:hover{
+.System:hover{
     background: #fff3;
     transition: background 0.1s;
 }
