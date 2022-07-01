@@ -28,7 +28,7 @@ h3{
     margin: 3em auto auto;
     border-top: solid 1px var(--c4);
     border-bottom: solid 1px var(--c4);
-    padding: 2em 3em;
+    padding: 4em 3em;
     gap: auto;
     background-color: var(--c1);
 }

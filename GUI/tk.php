@@ -14,7 +14,7 @@
             <h6 class="">E ja me matou <?php echo printTKPlayer($statKaru); ?> vezes</h6>
         </div>
     </div>
-    <div class="Info FullWidth Flex Wrap CentroX">
+    <div class="PageInfo FullWidth Flex Wrap CentroX">
         <h1 class="ShadowEffect CoolFont">um pouco sobre essa página...</h1>
         <h6 class="BodyText">
             Essa página nasceu como uma brincadeira entre eu e um amigo meu, o Karu. Brawlhalla é um jogo de luta online, e nós dois costumamos
@@ -27,10 +27,7 @@
             os "TKs" no meio da partida e posso esfregar na cara do Karu que ele não sabe diferenciar um aliado de um inimigo.
         </h6>
     </div>
-	<div class="API Flex CentroX">
-        <h2 class="">Informação geral</h2>
-    </div>
-    <div class="Flex Wrap">
+    <div class="APIInfo BA Flex Wrap JCSA" before='Informação geral'>
         <?php echo printLeo($statLeo); ?>
 	</div>
 </main>

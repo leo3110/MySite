@@ -72,10 +72,11 @@ a,a:active,a:hover{
 .Wrap{flex-wrap: wrap;}
 .Centro, .CentroY{align-items: center;}
 .Centro, .CentroX{justify-content: center;}
+.TextCenter,.TextCenterX{text-align: center;}
+.TextCenter,.TextCenterY{vertical-align: center;}
 .Col{flex-direction: column;}
 .JCSA{justify-content: space-around;}
 .JCSB{justify-content: space-between;}
-.Wrap{flex-wrap: wrap;}
 .InlineBlock{display: inline-block;}
 .col{width: auto;}
 .col-1 {width: 8.33%;}

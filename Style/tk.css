@@ -25,7 +25,7 @@ img{
     margin: auto;
     width: 65%;
 }
-.Info{
+.PageInfo{
     font-size: 300%;
     min-height: min-content;
     padding: 1em 0;
@@ -43,56 +43,53 @@ img{
     border: .1em solid var(--c2);
     text-shadow: 0 0 .2em var(--c3);
 }
-.Legend{
-    font-size: 90%;
-    width: 32%;
-    aspect-ratio:1;
-    border: .1em solid var(--c2);
-    min-height: min-content;
-    text-align: center;
+.APIInfo{
+    border-bottom: solid 1px var(--c4);
+    border-top: solid 1px var(--c4);
+    background-color: var(--c1);
 }
-.InfoLegendItem{
-    margin: .1em auto;
-    width: 40%;
-    background-color: var(--c5);
-    border: solid .2em var(--c1);
-    text-shadow: 0 0 .2em var(--c3);
-    border-radius: 9999px;
+.APIInfo::before{
+    display: block;
+    position: relative;
+    margin: 1em auto;
+    top: .3em;
+    width: 100%;
+    text-align:center;
 }
 .GeneralInfo{
-    width: 33vw;
+    width: 26%;
+    margin: 1em;
+    border: solid 1px var(--c2);
+}
+.AllInfo{
+    margin: 3% 6%;
+    width: 20%;
+    aspect-ratio:1;
+    background-color: var(--c5);
+    border-radius: 1em;
+    text-align: center;
 }
 .NameInfo{
     display: block;
     font-size: 3em;
+    text-align: center;
+    width: 100%;
 }
-.GamesInfo{
-
+.Legend{
+    margin: 1em;
+    font-size: 90%;
+    width: 26%;
+    border: .1em solid var(--c2);
+    min-height: min-content;
+    text-align: center;
 }
-.WinsInfo{
-
+.InfoLegend{
 }
-.LossesInfo{
-
-}
-.LevelInfo{
-
-}
-.PercentageInfo{
-
-}
-.DamageGadgetInfo{
-
-}
-.DamageGadgetInfo{
-
-}
-.DamageSidekickInfo{
-
-}
-.XpInfo{
-
-}
-.KoSidekickInfo{
-
+.InfoLegendItem{
+    margin: 1%;
+    width: 30%;
+    background-color: var(--c5);
+    border: solid .2em var(--c1);
+    text-shadow: 0 0 .2em var(--c3);
+    border-radius: .3em;
 }
