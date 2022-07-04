@@ -36,9 +36,6 @@
         <a class="System Flex Centro" href="/TK">
             <span>TK</span>
         </a>
-        <a class="System Flex Centro" href="/Sheet">
-            <span>RPG</span>
-        </a>
         <a class="System Flex Centro" href="#">
             <?php if ($_SESSION['lang'] == 'pt-br'): ?>
                 <span>Em Breve</span>

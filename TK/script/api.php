@@ -76,7 +76,7 @@ function printLeo($a){
             // echo "}<br>";
 			// break;
 			case 'name':
-				echo "<div class='GeneralInfo Flex Wrap JCSA'><div class='NameInfo'>".clean($value)."<i class=\"fa-brands fa-steam\"></i></div>";
+				echo "<div class='GeneralInfo Flex Wrap JCSA'><div class='NameInfo'>".clean($value)."   <i class=\"fa-brands fa-steam\"></i></div>";
 			break;
 			case 'games':
 				$games = clean($value);
@@ -84,10 +84,10 @@ function printLeo($a){
 			break;
 			case 'wins':
 				echo "<div class='AllInfo WinsInfo Flex Centro'><span>".changeKey($info,$keys).": ".clean($value)."</span></div>";
-				echo "<div class='AllInfo LossesInfo Flex Centro'>Derrotas:";
+				echo "<div class='AllInfo LossesInfo Flex Centro'><span>Derrotas:";
 				echo $games - clean($value);
 				unset($games);
-				echo "</div>";
+				echo "</span></div>";
 			break;
 			case 'level':
 				echo "<div class='AllInfo LevelInfo Flex Centro'><span>".changeKey($info,$keys).": ".clean($value)."</span></div>";
@@ -124,7 +124,7 @@ function printLeo($a){
 				echo "<div class='AllInfo XpInfo Flex Centro'><span>".changeKey($info,$keys).": ".clean($value)."</span></div>";
 			break;
 			case 'kosidekick':
-				echo "<div class='AllInfo KoSidekickInfo Flex Centro'><span>".changeKey($info,$keys).": ".clean($value)."</div></span></div>";
+				echo "<div class='AllInfo KoSidekickInfo Flex Centro'><span>".changeKey($info,$keys).": ".clean($value)."</span></div></div>";
 			break;
         }
     }
