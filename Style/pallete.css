@@ -1,40 +1,3 @@
-button{
-	width: 10em;
-	height: 5em;
-	background-color: var(--c3);
-	border-radius: 9999px;
-	color: var(--c2);
-	border: var(--c2) solid 1px;
-}
-#Save{
-
-}
-.Azul{
-
-}
-.Grande{
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 main{
 	background-color: var(--c1);
 }
@@ -43,21 +6,42 @@ main{
 }
 .OutPallete{
 	width: 70%;
-	border-radius: 1em;
-	border: solid 1px var(--c2);
-}
-.LeftPallete,.RightPallete{
-	width: 50%;
+	height: 60%;
+	border-radius: 2em;
+	border: solid 1px var(--c4);
+	padding: 1em 3em;
 }
 .LeftPallete{
-
+	width: 40%;
+	height: 100%;
+	background-color: var(--c1);
+	border-radius: 2em;
 }
 .RightPallete{
-	padding: .5em;
+	width: 60%;
+}
+.Buttons{
+	width: 100%;
+	padding: 1em;
+	border-bottom: 1px solid var(--c2);
+}
+.Button{
+	width: 10em;
+	aspect-ratio: 16/9;
+	background-color: var(--c3);
+	border-radius: 2em;
+	color: var(--c2);
+	border: var(--c2) solid 1px;
+}
+.Extract{
+	height: 80%;
+}
+.InExtract{
+	font-size: 200%;
 }
 .Pallete{
     border: .1em solid white;
-    width: 50%;
+    height: 95%;
     aspect-ratio:1;
     border-radius: 50%;
 }

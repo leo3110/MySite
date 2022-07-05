@@ -22,10 +22,10 @@ $(function(){
     });
     $("#Save").click(function() {
         $("#Extract").text("");
-        $("#Extract").append("--p1:"+$('.Pallete').css("background-color")+";<br>");
-        $("#Extract").append("--p2:"+$(".Background").css("background-color")+";<br>");
-        $("#Extract").append("--p3:"+$(".ULeft").css("background-color")+";<br>");
-        $("#Extract").append("--p4:"+$(".URight").css("background-color")+";<br>");
-        $("#Extract").append("--p5:"+$(".CDown").css("background-color")+";");
+        $("#Extract").append("<span>--p1:"+$('.Pallete').css("background-color")+"</span>;<br>");
+        $("#Extract").append("<span>--p2:"+$(".Background").css("background-color")+"</span>;<br>");
+        $("#Extract").append("<span>--p3:"+$(".ULeft").css("background-color")+"</span>;<br>");
+        $("#Extract").append("<span>--p4:"+$(".URight").css("background-color")+"</span>;<br>");
+        $("#Extract").append("<span>--p5:"+$(".CDown").css("background-color")+"</span>;");
     });
 })
