@@ -1,16 +1,69 @@
+button{
+	width: 10em;
+	height: 5em;
+	background-color: var(--c3);
+	border-radius: 9999px;
+	color: var(--c2);
+	border: var(--c2) solid 1px;
+}
+#Save{
+
+}
+.Azul{
+
+}
+.Grande{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+	background-color: var(--c1);
+}
+#Pallete{
+	height: 100vh;
+}
+.OutPallete{
+	width: 70%;
+	border-radius: 1em;
+	border: solid 1px var(--c2);
+}
+.LeftPallete,.RightPallete{
+	width: 50%;
+}
+.LeftPallete{
+
+}
+.RightPallete{
+	padding: .5em;
+}
 .Pallete{
     border: .1em solid white;
-    width: 50em;
+    width: 50%;
     aspect-ratio:1;
-    background-color: var(--c1);
-    border-radius: 50%;
-}
-.Pallete .Background{
-    aspect-ratio:1;
-    background-color: var(--c2);
     border-radius: 50%;
 }
 .Background{
+	aspect-ratio:1;
+	border-radius: 50%;
     width: 95%;
     height: 95%;
     padding: .3em;
@@ -25,16 +78,13 @@
 }
 .ULeft{
     border-top-left-radius: 100%;
-    background-color: var(--c3);
 }
 .URight{
     border-top-right-radius: 100%;
-    background-color: var(--c4);
 }
 .CDown{
     width: 47%;
     aspect-ratio:1;
-    background-color: var(--c5);
 }
 .DLeft{
     border-bottom-left-radius: 100%;

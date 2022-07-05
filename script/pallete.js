@@ -8,24 +8,24 @@ $(function(){
     function cor(){
         return "rgba("+num()+","+num()+","+num()+","+alfa()+")";
     }
-    $(":root").css("--c1",cor());
-    $(":root").css("--c2",cor());
-    $(":root").css("--c3",cor());
-    $(":root").css("--c4",cor());
-    $(":root").css("--c5",cor());
-    $("#pallete").click(function() {
+	$(".Pallete").css("background-color",cor());
+	$(".Background").css("background-color",cor());
+	$(".ULeft").css("background-color",cor());
+	$(".URight").css("background-color",cor());
+	$(".CDown").css("background-color",cor());
+    $("#New").click(function() {
         $(".Pallete").css("background-color",cor());
         $(".Background").css("background-color",cor());
         $(".ULeft").css("background-color",cor());
         $(".URight").css("background-color",cor());
         $(".CDown").css("background-color",cor());
     });
-    $("#save").click(function() {
-        $("#extract").text("");
-        $("#extract").append("--c1:"+$('.Pallete').css("background-color")+";<br>");
-        $("#extract").append("--c2:"+$(".Background").css("background-color")+";<br>");
-        $("#extract").append("--c3:"+$(".ULeft").css("background-color")+";<br>");
-        $("#extract").append("--c4:"+$(".URight").css("background-color")+";<br>");
-        $("#extract").append("--c5:"+$(".CDown").css("background-color")+";");
+    $("#Save").click(function() {
+        $("#Extract").text("");
+        $("#Extract").append("--p1:"+$('.Pallete').css("background-color")+";<br>");
+        $("#Extract").append("--p2:"+$(".Background").css("background-color")+";<br>");
+        $("#Extract").append("--p3:"+$(".ULeft").css("background-color")+";<br>");
+        $("#Extract").append("--p4:"+$(".URight").css("background-color")+";<br>");
+        $("#Extract").append("--p5:"+$(".CDown").css("background-color")+";");
     });
 })
