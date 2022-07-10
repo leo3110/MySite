@@ -1,17 +1,16 @@
-<?php
-// Busca da API
-$brawlIdLeo = "3093987";
-$brawlIdKaru = "47506890";
-$apiKey = "MIZ5D0IBHUWGN6BMF9UB";
-
-ob_start();
-include "https://api.brawlhalla.com/player/$brawlIdKaru/stats?api_key=$apiKey";
-$statKaru = ob_get_contents();
-ob_end_clean();
-ob_start();
-include "https://api.brawlhalla.com/player/$brawlIdLeo/stats?api_key=$apiKey";
-$statLeo = ob_get_contents();
-ob_end_clean();
+		<?php
+define("brawlIdLeo","3093987");
+define("brawlIdKaru", "47506890");
+define("apiKey", "MIZ5D0IBHUWGN6BMF9UB");
+function queryAPI($a,$b){
+	ob_start();
+	include "https://api.brawlhalla.com/player/$a/stats?api_key=$b";
+	$content = ob_get_contents();
+	ob_end_clean();
+	return $content;
+}
+$statKaru = queryAPI(brawlIdKaru,apiKey);
+$statLeo = queryAPI(brawlIdLeo,apiKey);
 function changeKey($a,$b){
     $a = $b["$a"];
     return $a;
@@ -46,7 +45,12 @@ function printTKLeo(){
     }
     echo $tkLeo;
 }
-function printLeo($a){
+function printTudo($a){
+	try {
+		if (isset($_GET['a'])) $a = queryAPI($_GET['a'],apiKey);
+	} catch (Exception $e) {
+		echo "Id Steam/Brawlhalla inválida, L53APITK";
+	}
     $player = json_decode($a,true);
     $keys = fopen("db/keys.json",'r') or die("erro ao abrir arquivo chaves");
     $keys = fread($keys, filesize("db/keys.json"));

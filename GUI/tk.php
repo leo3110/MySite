@@ -34,6 +34,6 @@
 		</span>
     </div>
     <div class="APIInfo BA Flex Wrap JCSA" before='Informação geral'>
-        <?php echo printLeo($statLeo); ?>
+        <?php echo printTudo($statLeo); ?>
 	</div>
 </main>

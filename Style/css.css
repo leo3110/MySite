@@ -19,19 +19,13 @@ html,body{
     margin: 0;
     scroll-behavior: smooth;
 }
-main{
-    min-height: 100vh;
-}
-h1,h2,h3,h4,h5,h6{
-    margin:0;
-}
+main{min-height: 100vh;}
+h1,h2,h3,h4,h5,h6{margin:0;}
 body{
     -ms-overflow-style: none;
     scrollbar-width:none;
 }
-body::-webkit-scrollbar{
-    display: none;
-}
+body::-webkit-scrollbar{display: none;}
 a,a:active,a:hover{
     color: var(--Texto);
     text-decoration: none;
@@ -40,12 +34,8 @@ a,a:active,a:hover{
     box-sizing: border-box;
     padding: 0;
 }
-.BA::before{
-    content: attr(before);
-}
-.BA::after{
-    content: attr(after);
-}
+.BA::before{content: attr(before);}
+.BA::after{content: attr(after);}
 .Footer{
     font-size: 1vw;
     display: block;
@@ -62,9 +52,7 @@ a,a:active,a:hover{
     color: var(--c2);
     text-shadow: 3px 3px 2px var(--c3);
 }
-.CoolFont{
-    font-family: 'Major Mono Display', monospace;
-}
+.CoolFont{font-family: 'Major Mono Display', monospace;}
 .FullWidth{width: 100%}
 .FullHeight{min-height: 100vh}
 .Flex{display: flex;}
