@@ -66,7 +66,7 @@ class Character{
     function printWeapon(){
         include_once 'Weapon.php';
         foreach (Weapon::returnWeapon($this->getWeapon()) as $key => $value) {
-            echo "<div class='Arma Flex JCSB'>";
+            echo "<div class='Weapon Flex JCSB'>";
             echo "<div ";
             foreach ($value as $kkey => $vvalue) {
                 echo "$kkey='$vvalue' ";
@@ -78,7 +78,7 @@ class Character{
     function printSkill(){
         include_once 'Skill.php';
         foreach (Skill::returnSkill($this->getSkill()) as $key => $value) {
-            echo "<div class='Skillidade'>";
+            echo "<div class='Skill'>";
             echo "<span ";
             foreach ($value as $kkey => $vvalue) {
                 echo "$kkey='$vvalue' ";
@@ -91,7 +91,7 @@ class Character{
         include_once 'Equipment.php';
         $equips = 6;
         foreach (Equipment::returnEquip($this->getEquip()) as $key => $value) {
-            echo "<div class='Equipamento Flex Col'";
+            echo "<div class='Equipment'";
             foreach ($value['bonus'] as $chave => $valor) {
                 echo "$chave='$valor'";
             }
@@ -103,7 +103,7 @@ class Character{
             $equips--;
         }
         while ($equips) {
-            echo "<div class='Equipamento Flex Col'>
+            echo "<div class='Equipment'>
                     <span>Vazio</span>
                     <div class='Botao'>
                     </div>

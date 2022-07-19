@@ -1,7 +1,5 @@
 h1{margin: 0}
-.OutFrame{
-    background: var(--c1);
-}
+main{background-color: var(--c1);}
 .Frame{
     padding-left: 1em;
     padding-right: 1em;
@@ -26,7 +24,10 @@ h1{margin: 0}
     border-left: 3px var(--c4) solid;
     border-radius: 1em;
 }
-.Arma{
+.InfoTop{
+	height: 30%;
+}
+.Weapon{
     border-top: .1em var(--c4) solid;
     border-bottom: .1em var(--c4) solid;
     border-radius: 5px;
@@ -35,18 +36,19 @@ h1{margin: 0}
 	margin-bottom: .1em;
     padding: .3em;
 }
-.Bottom{
-    height: 100%;
+.InfoBottom{
+	height: 70%;
 }
 .OutSkill{
-    height: 100%;
+	height: 100%;
+	display: grid;
+	column-count: 2;
     width: 50%;
     padding: .5em;
     border-right: 3px var(--c4) solid;
 }
 .Skill{
     height: min-content;
-    display: inline-block;
     margin: .5em;
     padding: .2em;
     text-align: center;
@@ -54,23 +56,20 @@ h1{margin: 0}
     border-radius: 5px;
 }
 .OutEquipment{
-    display: grid;
-    grid: auto / auto auto auto;
-    height: 100%;
-    width: 50%;
-    padding: .5em;
-    border-left: 3px var(--c4) solid;
+	height: 100%;
+	padding: .5em;
+	width: 50%;
+	display: grid;
+	column-gap: 1%;
+	row-gap: 1%;
+	grid-template-columns: auto auto auto;
 }
 .Equipment{
-    height: 90%;
+	margin: auto;
+	width: 50%;
     aspect-ratio:1;
-    display: inline-block;
-    margin: auto;
     text-align: center;
     border: var(--c4) solid 3px;
-}
-.Top{
-    width: auto;
 }
 .Button{
     gap: 5em;

@@ -25,6 +25,7 @@
             </div>
         <?php endif; ?>
     </div>
+	<?php include 'GUI/Division.php'; ?>
     <div class="OutSystem Flex Col MaxWidth JCSB Wrap" id="OutSystem">
         <a class="System Flex Centro" href="/Pallete">
             <?php if ($_SESSION['lang'] == 'pt-br'): ?>

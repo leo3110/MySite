@@ -22,7 +22,7 @@ if (isset($_GET['char'])&&$_GET['char']!='') {
                 <div class="Right Flex Col JCSB"><?php $class->printAtrib(); ?></div>
             </div>
             <div class="Info Flex Col col-9">
-                <div class="Flex">
+                <div class="InfoTop Flex">
                     <div class="LeftInfo Flex col-3">
                         <?php  $class->printName(); ?>
                     </div>
@@ -30,11 +30,11 @@ if (isset($_GET['char'])&&$_GET['char']!='') {
 	                    <?php  $class->printWeapon(); ?>
                     </div>
                 </div>
-                <div class="Bottom Flex">
-                    <div class="OutHabilidade Flex Wrap">
+                <div class="InfoBottom Flex">
+                    <div class="OutSkill">
                         <?php  $class->printSkill(); ?>
                     </div>
-                    <div class="OutEquipamento">
+                    <div class="OutEquipment">
                         <?php  $class->printEquip(); ?>
                     </div>
                 </div>
